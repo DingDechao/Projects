@@ -1,4 +1,4 @@
-package com.ddc.projects.java8.Collection;
+package com.ddc.projects.java8.collection;
 
 import com.ddc.projects.java8.entity.Person;
 
@@ -12,11 +12,11 @@ public class CollectionsSortTest {
     private static List<Person> personList = new LinkedList<>();
 
     static {
-        personList.add(new Person("ddc1",22));
-        personList.add(new Person("ddc2",12));
+        personList.add(new Person("ddc1", 22));
+        personList.add(new Person("ddc2", 12));
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(personList);
         Collections.sort(personList);
         System.out.println(personList);

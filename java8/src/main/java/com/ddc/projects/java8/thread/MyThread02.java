@@ -29,7 +29,5 @@ public class MyThread02 extends Thread {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
-
 }

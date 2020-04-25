@@ -49,13 +49,14 @@ public class Singleton {
         return INSTANCE;
     }*/
 
-   private static class InnerClass{
-       private static Singleton INSTALCE = new Singleton();
-   }
+    private static class InnerClass {
+        private static Singleton INSTALCE = new Singleton();
+    }
 
-   private Singleton() {}
+    private Singleton() {
+    }
 
-   public static Singleton getInstance() {
-       return InnerClass.INSTALCE;
-   }
+    public static Singleton getInstance() {
+        return InnerClass.INSTALCE;
+    }
 }

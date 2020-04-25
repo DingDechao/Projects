@@ -1,4 +1,4 @@
-package com.ddc.projects.java8.Collection;
+package com.ddc.projects.java8.collection;
 
 import com.ddc.projects.java8.entity.Person;
 
@@ -10,19 +10,19 @@ public class MapViewTest {
 
     static {
         personMap = new HashMap<>();
-        Person personOne = new Person("ddc1",20);
-        Person personTwo = new Person("ddc2",25);
+        Person personOne = new Person("ddc1", 20);
+        Person personTwo = new Person("ddc2", 25);
         personMap.put("ddc1", personOne);
         personMap.put("ddc2", personTwo);
     }
 
-
-
-    private static void forEachTest(){
-        personMap.forEach( (k, v) -> { System.out.println(v);});
+    private static void forEachTest() {
+        personMap.forEach((k, v) -> {
+            System.out.println(v);
+        });
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         MapViewTest.forEachTest();
     }
 }

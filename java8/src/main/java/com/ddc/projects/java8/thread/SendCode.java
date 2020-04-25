@@ -7,7 +7,9 @@ import java.io.RandomAccessFile;
 public class SendCode implements Runnable {
     //号码
     int code = 0;
+
     RandomAccessFile raf = null;
+
     //初始化块
     {
         try {

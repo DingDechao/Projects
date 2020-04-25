@@ -6,12 +6,12 @@ public class Pair<T> {
     private T first;
     private T second;
 
-    private Pair(){
+    private Pair() {
         first = null;
         second = null;
     }
 
-    private Pair(T first, T second){
+    private Pair(T first, T second) {
         this.first = first;
         this.second = second;
     }
@@ -32,7 +32,7 @@ public class Pair<T> {
         this.second = second;
     }
 
-    public static <T> Pair<T> makePair(Supplier<T> constr){
-        return new Pair<>(constr.get(),constr.get());
+    public static <T> Pair<T> makePair(Supplier<T> constr) {
+        return new Pair<>(constr.get(), constr.get());
     }
 }

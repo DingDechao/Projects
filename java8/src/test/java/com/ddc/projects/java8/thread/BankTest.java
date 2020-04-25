@@ -1,5 +1,6 @@
 package com.ddc.projects.java8.thread;
 
+import com.ddc.projects.java8.entity.Bank;
 import org.junit.Test;
 
 public class BankTest {

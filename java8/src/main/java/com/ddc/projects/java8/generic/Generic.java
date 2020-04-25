@@ -6,5 +6,4 @@ public class Generic {
     public static <T extends Throwable> void throwAs(Throwable e) throws T{
         throw (T) e;
     }
-
 }
