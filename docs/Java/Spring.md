@@ -1,4 +1,13 @@
 # Spring Boot
+
+## 安装 Spring Boot CLI(Command Line Interface)
+- Windows 和 Mac 通用版
+    1. 下载分发包 -> http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.3.0.RELEASE/spring-boot-cli-1.3.0.RELEASE-bin.zip
+    2. 解压缩第一步的zip包
+    3. 把bin路径加入到系统变量中 -> spring-1.3.0.RELEASE\bin
+    4. (可选)建立符号链接以方便后期更换版本
+    5. 测试是否安装成功 -> spring --version
+
 ##### 如果需要spring boot内嵌tomcat，让项目可以启动起来，需要加入下面依赖
 ```
 <dependency>

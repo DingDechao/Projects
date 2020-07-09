@@ -113,7 +113,11 @@ wget url
 2.下载到指定目前并且重命名
 wget -O path/name url
 ```
-
+##### 上次和下载数据
+```
+curl -s or curl --silence //程序不输出任何信息和错误信息，但是会输出结果
+curl -S or --show-error // 程序有错误的时候会输出错误信息
+```
 ##### 根据IP地址找域名
 ```
 nslookup -qt=ptr ip地址 --》 ptr反向查找

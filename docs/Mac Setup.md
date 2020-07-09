@@ -7,18 +7,52 @@
 - XMind ZEN
 - Visual Studio Code
 - Momentum (Chrome plugin)
+- SwitchyOmega (Chrome plugin)
+- JSON Formatter (Chrome plugin)
 - MySQLWorkbench
 - homebrew
 - Google Chrome
 - Google Chrome Canary
 - Sublime Text
-- NeteaseMusic
+- Netease Music
 - WeChat
 - Youdao Note
 - Postman
 - Kindle
+- xcode-select --install
 
 # U3419W
+
+##### How to install homebrew on Mac
+```
+Offical website : https://brew.sh/index_zh-cn
+Open command line tool and run below command
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/usr/bin/ruby -e "$(curl -fsSL https://hellogithub.cn-bj.ufileos.com/file/brew_install.sh)"
+```
+
+##### How to use homebrew
+```
+向homebrew添加额外的仓库用tap
+brew tap pivotal/tap //添加spring 和spring boot的仓库
+安装spring boot cli
+brew install springboot 会安装到/usr/local/bin
+
+查看已安装的列表
+brew list
+
+查看可用的包
+brew search package name
+
+更新homebrew
+brew update
+
+安装包
+brew install package name
+
+卸载包
+brew uninstall package name
+```
 
 ##### jdk
 ```
@@ -50,4 +84,12 @@ mvn -v
 cd ~
 ssh-keygen -t rsa
 cd .ssh
+```
+
+##### Jenkins
+```
+Download Jenkins from below website : https://www.jenkins.io/download/lts/macos/
+Start the Jenkins service : brew services start jenkins-lts
+Restart the Jenkins service : brew services restart jenkins-lts
+Update the Jenkins version : brew upgrade jenkins-lts
 ```
