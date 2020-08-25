@@ -13,6 +13,7 @@
         <module>spock-framework</module>
         <module>jdbc</module>
         <module>unittest</module>
+        <module>mongodb</module>
     </modules>
     <packaging>pom</packaging>
     <dependencyManagement>

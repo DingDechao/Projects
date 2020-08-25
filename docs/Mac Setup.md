@@ -20,6 +20,8 @@
 - Postman
 - Kindle
 - xcode-select --install
+- MongoDB + Compass
+- StarUML
 
 # U3419W
 
@@ -29,6 +31,10 @@ Offical website : https://brew.sh/index_zh-cn
 Open command line tool and run below command
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 /usr/bin/ruby -e "$(curl -fsSL https://hellogithub.cn-bj.ufileos.com/file/brew_install.sh)"
+
+If above url not work, use below
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+
 ```
 
 ##### How to use homebrew

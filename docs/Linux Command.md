@@ -175,6 +175,10 @@ source /etc/profile
         wget --no-check-certificate --no-cookies --header "Cookie:oraclelicense=accept-securebackup-cookie" 'http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz'
     2 unpackage
         tar -zxvf jdk-8u191-linux-x64.tar.gz
+        z : 用gzip压缩
+        x : 解压
+        v : 显示所有过程，可以理解为打印log
+        f : 文件名
     3 move to /usr/local/folder
         mv jdk1.8.0_191 /usr/local/jdk1.8
     4 setup development environment
