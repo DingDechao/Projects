@@ -22,6 +22,7 @@
 - xcode-select --install
 - MongoDB + Compass
 - StarUML
+- Sonar
 
 # U3419W
 
