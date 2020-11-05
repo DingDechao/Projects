@@ -3,13 +3,13 @@ package com.ddc.projects.sonarqube.demo;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class ConstantExampleTest {
+public class FinalExampleTest {
 
-    static ConstantExample constantExample;
+    static FinalExample finalExample;
 
     @BeforeClass
     public static void beforeClass() {
-        constantExample = new ConstantExample();
+        finalExample = new FinalExample();
     }
 
     @Test

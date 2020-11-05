@@ -5,8 +5,6 @@ import org.junit.Test;
 public class InterfaceExampleTest {
 
     @Test
-    public void test() {
-
+    public void testConstants() {
     }
-
 }
