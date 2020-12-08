@@ -1,28 +1,166 @@
 # Git
-## 什么是Git
-- 免费的
-- 开源的
-- 分布式的
-- 版本控制系统SCM
-
-## 为什么要用Git
-- 分支
-- 工作流
-- 开源
-- 高性能（20万commit，4万文件修改，一分钟之内切换）
-- 抗故障和攻击的能力
-- 离线开发和多点开发
-- 可拓展性
-
-## 关于命令行
-
-## 基本概念
-- 集中式版本控制系统
-- 分布式版本控制系统
 
 ##### 查看版本信息
 ```
 git --version
+```
+
+##### 初始化版本库
+```
+git init
+// .git 的隐藏文件被创建
+```
+
+##### 查看帮助文档
+```
+git --help
+git init --help
+```
+
+##### 将工作区（本地目录）文件提交到暂存区（介于本地仓库和工作区之间的一层）
+```
+git add filename1 filename2
+git add -A | git add --all (添加所有文件)  -A 是--all的简写形式
+//支持通配符* 和 ?
+```
+
+##### 对要删除的文件执行的命令
+```
+git rm filename
+//已经在版本库中的文件可以删除
+//删除在暂存区中的文件需要使用-f
+git rm -f filename
+//只在工作区中的文件无法删除
+```
+
+##### 查看当前工作区相对于上次提交（commit）之后所有的修改，包括有没有add到暂存区，暂存区有哪些没有commit
+```
+git status
+git status --short (显示精简信息)
+```
+
+##### 查看所有的不同|查看某个文件的不同
+```
+//支持分支，标签，HEAD
+git diff  # staging vs workspace
+git diff filename # staging filename vs workspace filename
+git diff commitId HEAD
+git diff HEAD^! 比较HEAD和上一次提交^!）的不同
+git diff 某一次提交 某一次提交  -- 限定路径
+git diff --staged (比较暂存区和版本库的区别）
+git diff --stat XXX XXX
+
+默认的diff显示当前分支和要合并的分支
+git config merge.conflictstyle diff3 （把父节点的信息也给出）
+```
+
+##### 将暂存区提交到本地仓库中
+```
+git commit -m "备注信息" 
+git commit --message "备注信息" --> --m 是--message 的简写形式
+```
+
+##### 查看项目提交历史(按时间降序排列)
+```
+git log
+git log --oneline （在一行的简单形式）
+git log --graph  (log的图形化版本)
+git log --stat  (详细提交统计信息)
+git log -n 3 （显示最后3次提交的信息）
+git log --format=fuller （显示更多细节）
+git log --dirstat  (显示修改文件的目录)
+git log --shortstat (显示有多少修改，新增和删除的文件)
+git log a..b (属于branch b而不属于branch a的提交)
+```
+
+##### 重置当前的暂存区,把版本库中的文件恢复到暂存区，HEAD代表在版本库中最新的记录
+```
+git reset HEAD blah.txt 重置blah.txt 到HEAD指针上
+git reset —-hard commit (把暂存区和工作区和本地仓库一起重置为commit的那个点上)
+git reset --mixed commit 把暂存区和本地仓库重置为commit的那个点上
+git reset --soft commit 把本地仓库重置为commit的那个点上
+```
+
+##### 显示当前本地所有分支，带星号的是当前的分支
+```
+git branch
+
+显示所有远程分支
+git branch -r
+
+显示所有本地和远程分支
+git branch -a
+```
+
+##### 为当前提交创建新的分支
+```
+git branch branchname
+
+从现有分支创建新的分支
+git branch new old
+
+删除分支
+git branch -d branch name
+git branch -D branchname (强制删除分区)
+
+恢复被删除的分支
+1 git reflog （查看所有指针移动记录）
+2 git branch branchname HEAD@{1} 恢复某个分支
+
+创建并切换到新的分支上的快捷命令
+git checkout -b newbranch
+git checkout -b newbranch commitid --> 以commitid为起点创建newbranch并切换到这个新分支上
+git checkout —force branchname （强制切换分区，当前分支的改动会丢失）
+
+```
+
+##### 改变当前的分支
+```
+git checkout branchname
+```
+
+##### 把当前工作区和暂存区的内容存到stash stack中
+```
+git stash
+
+恢复stash stack中的数据到工作区中
+git stash pop (恢复最上面的数据)
+git stash pop stash@{1}
+
+检查stash stack中的数据
+git stash list
+
+清除stash stack里面的内容
+git stash clear
+```
+
+##### 合并分支
+```
+//切换到主分支
+git merge branchname —> 把branchname分支合并到主分支
+
+//合并失败 - 取消合并
+git reset --merge
+//强制产生一次commit
+git merge —no-ff branchname
+```
+
+##### 解决冲突
+```
+
+```
+
+##### rebase
+```
+
+```
+
+---
+
+
+##### 查看用户名和邮箱配置
+```
+git config --list
 ```
 
 ##### 查看用户名和邮箱
@@ -36,57 +174,6 @@ git config user.email
 git config --global user.email "dingdechao_0486@163.com"
 git config --global user.name "ddc"
 git config --global alias.xx commit -->给 commit设置别名
-```
-
-##### 查看用户名和邮箱配置
-```
-git config --list
-```
-
-##### 将工作区（本地目录）文件提交到暂存区（介于本地仓库和工作区之间的一层）
-```
-git add filename1 filename2
-git add -A | git add --all (添加所有文件)  -A 是--all的简写形式
-```
-
-##### 将暂存区提交到本地仓库中
-```
-git commit -m "备注信息" | git commit --message "备注信息" --> --m 是--message 的简写形式
-```
-
-##### 查看当前工作区相对于上次提交（commit）之后所有的修改，包括有没有add到暂存区，暂存区有哪些没有commit
-```
-git status
-git status --short (显示精简信息)
-```
-
-##### 查看所有的不同|查看某个文件的不同
-```
-git diff  | git diff filename
-git diff HEAD^! 比较HEAD和上一次提交^!）的不同
-git diff 某一次提交 某一次提交  -限定目标（没试过）
-git diff --staged (比较暂存区和版本库的区别）
-
-默认的diff显示当前分支和要合并的分支
-git config merge.conflictstyle diff3 （把父节点的信息也给出）
-```
-
-##### 对要删除的文件执行的命令
-```
-git rm filename
-```
-
-##### 查看项目提交历史(按时间降序排列)
-```
-git log
-git log --oneline （在一行的简单形式）
-git log --graph  (log的图形化版本)
-git log --stat  (详细提交统计信息)
-git log -n 3 （显示最后3次提交的信息）
-git log --format=fuller （显示更多细节）
-git log --dirstat  (显示修改文件的目录)
-git log --shortstat (显示有多少修改，新增和删除的文件)
-git log a..b (属于b而不属于a的提交)
 ```
 
 ##### 创建一个带有项目原始信息和整个项目历史的克隆版本
@@ -113,71 +200,6 @@ git push 目标版本库 目标分支
 ##### 检查散列值和文件内容是否匹配确认版本库的完整性
 ```
 git fsck
-```
-
-##### 重置当前的暂存区,把版本库中的文件恢复到暂存区，HEAD代表在版本库中最新的记录
-```
-git reset HEAD blah.txt
-git reset —hard commit (把暂存区和工作区一起重置为commit的那个点上)
-```
-
-##### 把当前工作区和暂存区的内容存到stash stack中
-```
-git stash
-
-恢复stash stack中的数据到工作区中
-git stash pop (恢复最上面的数据)
-git stash pop stash@{1}
-
-检查stash stack中的数据
-git stash list
-
-清除stash stack里面的内容
-git stash clear
-```
-
-##### 显示当前本地所有分支，带星号的是当前的分支
-```
-git branch
-
-显示所有远程分支
-git branch -r
-
-显示所有本地和远程分支
-git branch -a
-```
-
-##### 改变当前的分支
-```
-git checkout branchname
-```
-
-##### 为当前提交创建新的分支
-```
-git branch branchname
-
-从现有分支创建新的分支
-git branch new old
-
-删除分支
-git branch -d branch name
-git branch -D branchname (强制删除分区)
-
-恢复被删除的分支
-1 git reflog （查看所有指针移动记录）
-2 git branch branchname HEAD@{1} 恢复某个分支
-
-创建并切换到新的分支上的快捷命令
-git checkout -b newbranch
-git checkout -b newbranch commitid --> 以commitid为起点创建newbranch并切换到这个新分支上
-git checkout —force branchname （强制切换分区，当前分支的改动会丢失）
-
-合并分支
-切换到主分支
-git merge branchname —> 把branchname分支合并到主分支
-
-合并失败 应该用 git reset --merge取消合并
-git merge —no-ff branchname （强制产生一次commit）
 ```
 
 ##### 使用二分法查找错误

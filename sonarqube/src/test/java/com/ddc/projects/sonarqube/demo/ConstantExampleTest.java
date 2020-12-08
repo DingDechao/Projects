@@ -6,7 +6,6 @@ import org.junit.Test;
 public class ConstantExampleTest {
 
     static ConstantExample constantExample;
-
     @BeforeClass
     public static void beforeClass() {
         constantExample = new ConstantExample();

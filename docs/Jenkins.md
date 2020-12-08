@@ -13,6 +13,6 @@
 - Mac
     ```
     brew install jenkins-lts
-    brew services start jenkins-lts
+    brew servuces start jenkins-lts
     open http://localhost:8080
     ```
