@@ -152,7 +152,7 @@ git merge —no-ff branchname
 
 ##### rebase
 ```
-
+git rebase master
 ```
 
 ---
