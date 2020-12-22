@@ -19,3 +19,8 @@
     1. dependsOn
     2. doFirst, doLast = <<
     
+    
+## Resolve dependencies conflict
+1.  Look into dependencies tree
+2.  排除传递依赖/强制指定版本
+    

@@ -17,6 +17,7 @@
         <module>clean-code</module>
         <module>sonarqube</module>
         <module>openapi</module>
+        <module>velocity</module>
     </modules>
     <packaging>pom</packaging>
     <dependencyManagement>

@@ -1,0 +1,29 @@
+#set( $this = "Velocity")
+
+$this is great!
+
+#foreach( $name in $list )
+    $name is great!
+#end
+
+#set( $condition = true)
+
+#if ($condition)
+    The condition is true!
+#else
+    The condition is false!
+#end
+
+$test
+
+$!test 111
+
+($!tes) == true
+
+
+#if (($person.b - $person.a) == 1)
+    The condition is true!
+#else
+    The condition is false!
+#end
+
