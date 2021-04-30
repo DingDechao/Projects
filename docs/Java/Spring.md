@@ -24,6 +24,7 @@
 ## Spring Boot
 - 基于历代Spring Framework
 - 自动配置
+    - 自定义配置(覆盖自动配置/属性文件外置配置微调配置)
 - 起步依赖（starter dependency）
 - Actuator
 
@@ -97,3 +98,23 @@ ConfigurableApplicationContext context = new SpringApplicationBuilder(Main.class
                                          run(args);
 ```
 
+##### Spring Boot 默认日志
+Spring Boot 会用Logback作为默认日志
+日志级别为INFO
+要想完全掌控日志配置，需要在src/main/resources里面创建logback.xml
+默认情况下，日志到达10MB会切分一次
+```
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <logger name="root" level="INFO"/>
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
+```
