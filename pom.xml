@@ -19,6 +19,7 @@
         <module>openapi</module>
         <module>velocity</module>
         <module>mapstruct</module>
+        <module>integrationtest</module>
     </modules>
     <packaging>pom</packaging>
     <dependencyManagement>
