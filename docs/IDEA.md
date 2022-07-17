@@ -1,4 +1,5 @@
 # IDEA
+## IDEA是JetBrains公司的产品，JetBrains公司总部在捷克共和国的首都布拉格
 
 ## 特色功能
 1. 历史记录
@@ -13,6 +14,14 @@
 10. 预制模板
 11. 智能代码/代码辅助
 ---
+
+## 版本历史
+- 2001年
+- 每年一版本（2003年除外）
+
+## 版本
+- Community Edition - 社区版
+- Ultimate Edition - 商业版
 
 ## 安装IDEA
 - Toolbox App
