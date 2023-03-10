@@ -106,8 +106,8 @@ public void getPlaceOfOrigin() {
              List<String> stringList = list;
      
      /*      Exception in thread "main" java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
-             at com.ddc.projects.java8.annotationdemo.HeapPollution.heapPollutionDemo(HeapPollution.java:15)
-             at com.ddc.projects.java8.annotationdemo.HeapPollution.main(HeapPollution.java:20)*/
+             at annotationdemo.java8.com.ddc.projects.java11.HeapPollution.heapPollutionDemo(HeapPollution.java:15)
+             at annotationdemo.java8.com.ddc.projects.java11.HeapPollution.main(HeapPollution.java:20)*/
              System.out.println(stringList.get(0));
          }
          
@@ -132,8 +132,8 @@ public void getPlaceOfOrigin() {
             List<String> stringList = list;
     
     /*      Exception in thread "main" java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
-            at com.ddc.projects.java8.annotationdemo.HeapPollution.heapPollutionDemo(HeapPollution.java:15)
-            at com.ddc.projects.java8.annotationdemo.HeapPollution.main(HeapPollution.java:20)*/
+            at annotationdemo.java8.com.ddc.projects.java11.HeapPollution.heapPollutionDemo(HeapPollution.java:15)
+            at annotationdemo.java8.com.ddc.projects.java11.HeapPollution.main(HeapPollution.java:20)*/
             System.out.println(stringList.get(0));
         }
     
@@ -147,8 +147,8 @@ public void getPlaceOfOrigin() {
             listArray[0] = integerList;
     /*
             Exception in thread "main" java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
-            at com.ddc.projects.java8.annotationdemo.HeapPollution.heapPollutionDemo2(HeapPollution.java:29)
-            at com.ddc.projects.java8.annotationdemo.HeapPollution.main(HeapPollution.java:34)
+            at annotationdemo.java8.com.ddc.projects.java11.HeapPollution.heapPollutionDemo2(HeapPollution.java:29)
+            at annotationdemo.java8.com.ddc.projects.java11.HeapPollution.main(HeapPollution.java:34)
     */
             String str = listStringArray[0].get(0);
         }
@@ -333,7 +333,7 @@ public class TestableProcessor {
     }
 
     public static void main(String[] args) throws Exception{
-        TestableProcessor.process("com.ddc.projects.java8.annotationdemo.TestAnnotationTestable");
+        TestableProcessor.process("annotationdemo.java8.com.ddc.projects.java11.TestAnnotationTestable");
         //This is method 4
         //This is method 2
     }

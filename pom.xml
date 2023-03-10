@@ -20,6 +20,8 @@
         <module>velocity</module>
         <module>mapstruct</module>
         <module>integrationtest</module>
+        <module>java</module>
+        <module>java11</module>
     </modules>
     <packaging>pom</packaging>
     <dependencyManagement>
