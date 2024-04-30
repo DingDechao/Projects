@@ -62,6 +62,11 @@ gradle -q tasks --all
 gradle tasks --all
 
 ```
+Display all properties
+```
+gradle properties
+```
+
 Run the task via command line tool
 ```
 gradle helloworld -- gradle [task name]
@@ -78,5 +83,21 @@ gradlee groupTherapy -is -- i log as info s error stack trace
 ```
 gradle -h
 gradle --help
+```
+
+```
+gradle --offline build -- no need internet
+```
+
+log
+```
+gradle -i build
+gradle --info build
+
+gradle -s build
+gradle --stacktrace build
+
+gradle -q build
+gradle --quiet build
 ```
     
