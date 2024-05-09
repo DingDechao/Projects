@@ -100,4 +100,21 @@ gradle --stacktrace build
 gradle -q build
 gradle --quiet build
 ```
+
+build
+```
+gradle build
+
+```
+
+plugin
+```
+apply plugin: 'java'
+
+or 
+
+plugins {
+    id 'java'
+}
+```
     
