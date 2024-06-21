@@ -2,11 +2,6 @@ plugins {
     id 'java'
 }
 
-setDescription("myProject")
-println "Description of project $name: " + project.description
-
-//apply plugin: 'java'
-
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 
@@ -50,9 +45,6 @@ def chant() {
 yayCradle0.dependsOn startSession
 yayCradle2.dependsOn yayCradle1, yayCradle0
 task groupTherapy(dependsOn: yayCradle2)
-
-
-
 
 
 //gradle  groupTherapy
