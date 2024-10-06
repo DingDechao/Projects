@@ -1,0 +1,73 @@
+plugins {
+    id 'java'
+}
+
+setDescription("myProject")
+println "Description of project $name: " + project.description
+
+//apply plugin: 'java'
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task helloworld{
+    doLast {
+        println 'Hello World!'
+    }
+}
+
+task startSession {
+    doLast {
+        chant()
+    }
+}
+
+def chant() {
+    ant.echo(message: 'Repeat after me...')
+}
+
+3.times {
+    task "yayCradle$it" {
+        doLast {
+            println 'Gradle rocks'
+        }
+    }
+}
+
+yayCradle0.dependsOn startSession
+yayCradle2.dependsOn yayCradle1, yayCradle0
+task groupTherapy(dependsOn: yayCradle2)
+
+
+
+
+
+//gradle  groupTherapy
+//
+//> Task :startSession
+//[ant:echo] Repeat after me...
+//
+//> Task :yayCradle0
+//Gradle rocks
+//
+//> Task :yayCradle1
+//Gradle rocks
+//
+//> Task :yayCradle2
+//Gradle rocks
+//
+//BUILD SUCCESSFUL in 314ms
+//4 actionable tasks: 4 executed
