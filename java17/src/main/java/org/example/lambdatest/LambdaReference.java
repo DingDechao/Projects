@@ -1,6 +1,8 @@
 package org.example.lambdatest;
 
 
+import javax.swing.*;
+
 public class LambdaReference {
 
     public static void main(String[] args) {
@@ -29,6 +31,13 @@ public class LambdaReference {
         var value5 = referenceTest1.test("Hello World", 1, 2);
         System.out.println(value5);
 
+        ConstructorReferenceTest constructorReferenceTest0 = a -> new JFrame(a);
+        var value6 = constructorReferenceTest0.win("Hello World");
+        System.out.println(value6);
+
+        ConstructorReferenceTest constructorReferenceTest1 = JFrame::new;
+        var value7 = constructorReferenceTest1.win("Hello World");
+        System.out.println(value7);
     }
 
 
@@ -42,5 +51,10 @@ interface Converter {
 @FunctionalInterface
 interface ReferenceTest {
     String test(String a, int b, int c);
+}
+
+@FunctionalInterface
+interface ConstructorReferenceTest {
+    JFrame win(String title);
 }
 
