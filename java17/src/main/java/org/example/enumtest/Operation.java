@@ -1,4 +1,4 @@
-package com.ddc.projects.java11.enumdemo;
+package org.example.enumtest;
 
 public enum Operation {
 

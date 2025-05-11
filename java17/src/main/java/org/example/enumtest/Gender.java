@@ -1,4 +1,4 @@
-package com.ddc.projects.java11.enumdemo;
+package org.example.enumtest;
 
 /*
 *   实例有限且固定的类就是枚举类
