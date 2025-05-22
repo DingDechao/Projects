@@ -43,4 +43,5 @@
 18. Install 优酷 from https://www.youku.com/
 19. Install 有道词典 from https://fanyi.youdao.com/download-Windows?keyfrom=fanyiweb_navigation
 20. Install maven 3.9.9 from https://maven.apache.org/download.cgi
+21. Install Dbeaver from https://dbeaver.io/ 
 

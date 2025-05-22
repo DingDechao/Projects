@@ -36,6 +36,7 @@ mysql --help |grep 'my.cnf'
 
 ##### 登录mysql
 ```
+mysql -uUSER -pPASSCODE -hHOSTNAME --default-character-set=utf8
 mysql -u username -h host --default-character-set=utf-8 -p password
 需要把%MYSQL_HOME%\bin 加入path中
 ```
@@ -79,6 +80,21 @@ SHOW TABLES;
 ```
 DESCRIBE table_name;
 DESC table_name;
+```
+
+##### 创建表的语法
+```
+create table [schema.]table_name
+(
+#多个列的定义
+column_name1 data_type [default expr],
+......
+)
+```
+
+##### 查看所有的表信息
+```
+select * from information_schema.tables;
 ```
 
 ##### 查看表结构
