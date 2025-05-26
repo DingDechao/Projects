@@ -209,4 +209,19 @@ select teacher_name, teacher_pass from teacher_table;
 
 drop view view_name;
 
+# mysql function
+## char_length
+select char_length(teacher_name) from teacher_table;
+
+## DATE_ADD()
+select  DATE_ADD(CURDATE() , interval 2 month);
+
+## ADDDATE()
+select adddate(curdate(), 3)
+
+## CURDATE()
+select CURDATE();
+
+## curtime();
+select curtime();
                         
