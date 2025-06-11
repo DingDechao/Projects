@@ -32,7 +32,6 @@
 9. Install drawio from https://www.drawio.com/
 10. Install 百度云盘 from https://pan.baidu.com/download#win
 11. Install mysql 8.44 from https://dev.mysql.com/downloads/file/?id=536789
-    mysql workbench
 12. Install Adobe Reader from https://get.adobe.com/cn/reader/
 13. Install Oracle Database XE 21c from https://www.oracle.com/database/technologies/xe-downloads.html
     Install Oracle Database XE 19c from https://www.oracle.com/database/technologies/xe-downloads.html
@@ -44,4 +43,4 @@
 19. Install 有道词典 from https://fanyi.youdao.com/download-Windows?keyfrom=fanyiweb_navigation
 20. Install maven 3.9.9 from https://maven.apache.org/download.cgi
 21. Install Dbeaver from https://dbeaver.io/ 
-
+22. Install Kimi from https://www.kimi.com/?data_source=tracer&utm_campaign=TR_D0pcUf08&utm_content=&utm_medium=%E7%99%BE%E5%BA%A6&utm_source=baidu_search&utm_term=%7Bkw_enc_utf8%7D
