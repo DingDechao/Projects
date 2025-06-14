@@ -3,12 +3,15 @@
 - Virtual Box
 - iTerm 2
 - Docker
+- JetBrians Toolbox
 - IntelliJ IDEA CE
 - XMind ZEN
 - Visual Studio Code
 - Momentum (Chrome plugin)
 - SwitchyOmega (Chrome plugin)
 - JSON Formatter (Chrome plugin)
+- MySQL
+- DBeaver
 - MySQLWorkbench
 - homebrew
 - Google Chrome
