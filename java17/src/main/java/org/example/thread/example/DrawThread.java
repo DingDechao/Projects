@@ -1,4 +1,4 @@
-package org.example.java11.thread;
+package org.example.thread.example;
 
 public class DrawThread extends Thread {
 
