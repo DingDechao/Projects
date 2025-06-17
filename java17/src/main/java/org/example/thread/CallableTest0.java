@@ -4,8 +4,7 @@ import java.util.concurrent.FutureTask;
 
 public class CallableTest0 {
     public static void main(String[] args) {
-        var callableTest0 = new CallableTest0();
-        FutureTask<Integer> futureTask = new FutureTask<>( () -> {
+        FutureTask<Integer> futureTask = new FutureTask<>(() -> {
             var i = 0;
             for (; i < 100; i++) {
                 System.out.println(Thread.currentThread().getName() + "----------------> i = " + i);
@@ -13,7 +12,7 @@ public class CallableTest0 {
             return i;
         });
 
-        for (var i =0; i <100; i++) {
+        for (var i = 0; i < 100; i++) {
             System.out.println(Thread.currentThread().getName() + "-----------------> i = " + i);
             if (i == 20) {
                 new Thread(futureTask, "CallableTest0").start();
