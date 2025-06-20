@@ -1,4 +1,4 @@
-package org.example.thread.example;
+package org.example.thread.example0;
 
 import java.util.Objects;
 

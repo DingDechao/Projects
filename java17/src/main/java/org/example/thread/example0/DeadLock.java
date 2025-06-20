@@ -1,4 +1,4 @@
-package org.example.thread.example;
+package org.example.thread.example0;
 
 class A {
     public synchronized void foo(B b) {
