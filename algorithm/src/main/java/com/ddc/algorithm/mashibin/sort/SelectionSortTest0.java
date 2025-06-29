@@ -8,7 +8,21 @@ public class SelectionSortTest0 {
     // 找出1-N-1上面最小的,把最小的放到第1位
 
     private void selectionSort(int[] arr) {
+        for (var i = 0; i < arr.length; i++) {
+            int minIndex = i;
+            for (var j = i; j < arr.length; j++) {
+                if(arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            swap(arr, i, minIndex);
+        }
+    }
 
+    private void swap(int[] arr, int oldIndex, int newIndex) {
+        int tmp = arr[newIndex];
+        arr[newIndex] = arr[oldIndex];
+        arr[oldIndex] = tmp;
     }
 
     private void printIntArray(int[] arr) {
