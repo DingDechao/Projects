@@ -7,7 +7,7 @@ public class SelectionSortTest0 {
     // 找出0-N-1上面最小的,把最小的放到第0位
     // 找出1-N-1上面最小的,把最小的放到第1位
 
-    private void selectionSort(int[] arr) {
+    public void selectionSort(int[] arr) {
         for (var i = 0; i < arr.length; i++) {
             int minIndex = i;
             for (var j = i; j < arr.length; j++) {
@@ -25,7 +25,7 @@ public class SelectionSortTest0 {
         arr[oldIndex] = tmp;
     }
 
-    private void printIntArray(int[] arr) {
+    public void printIntArray(int[] arr) {
         System.out.println(Arrays.toString(arr));
     }
 
