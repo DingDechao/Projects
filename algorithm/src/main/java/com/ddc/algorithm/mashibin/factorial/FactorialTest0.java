@@ -28,6 +28,19 @@ public class FactorialTest0 {
         return result;
     }
 
+    private int factoricalSum2(int n) {
+        if (n < 1) {
+            return 0;
+        }
+        int result = 0;
+        int current = 1;
+        for (var i = 1; i <= n; i++) {
+            current = current * i;
+            result += current;
+        }
+        return result;
+    }
+
     private int factorial(int n) {
         if (n < 1) {
             return 0;
@@ -62,5 +75,12 @@ public class FactorialTest0 {
         System.out.println("3-->" + factorialTest0.factoricalSum1(3));
         System.out.println("4-->" + factorialTest0.factoricalSum1(4));
         System.out.println("5-->" + factorialTest0.factoricalSum1(5));
+
+        System.out.println("0-->" + factorialTest0.factoricalSum2(0));
+        System.out.println("1-->" + factorialTest0.factoricalSum2(1));
+        System.out.println("2-->" + factorialTest0.factoricalSum2(2));
+        System.out.println("3-->" + factorialTest0.factoricalSum2(3));
+        System.out.println("4-->" + factorialTest0.factoricalSum2(4));
+        System.out.println("5-->" + factorialTest0.factoricalSum2(5));
     }
 }
