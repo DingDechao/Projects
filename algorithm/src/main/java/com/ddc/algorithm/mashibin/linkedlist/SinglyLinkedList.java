@@ -6,6 +6,10 @@ public class SinglyLinkedList<T> {
     private T value;
     private SinglyLinkedList<T> next;
 
+    public SinglyLinkedList(T value) {
+        this.value = value;
+    }
+
     public SinglyLinkedList(T value, SinglyLinkedList<T> next) {
         this.value = value;
         this.next = next;
