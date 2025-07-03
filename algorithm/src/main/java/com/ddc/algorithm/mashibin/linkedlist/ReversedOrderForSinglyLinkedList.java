@@ -2,45 +2,43 @@ package com.ddc.algorithm.mashibin.linkedlist;
 
 public class ReversedOrderForSinglyLinkedList {
 
-    public static SinglyLinkedList createExampleSinglyLinkedList() {
-        SinglyLinkedList singlyLinkedList2 = new SinglyLinkedList("3", null);
-        SinglyLinkedList singlyLinkedList1 = new SinglyLinkedList("2", singlyLinkedList2);
-        SinglyLinkedList singlyLinkedList0 = new SinglyLinkedList("1", singlyLinkedList1);
-        return singlyLinkedList0;
+    public static SinglyLinkedList<String> createExampleSinglyLinkedList() {
+        SinglyLinkedList<String> singlyLinkedList2 = new SinglyLinkedList<>("3", null);
+        SinglyLinkedList<String> singlyLinkedList1 = new SinglyLinkedList<>("2", singlyLinkedList2);
+        return new SinglyLinkedList<>("1", singlyLinkedList1);
     }
 
-    public static void printSinglyLinkedList(SinglyLinkedList singlyLinkedList) {
+    public static void printSinglyLinkedList(SinglyLinkedList<String> singlyLinkedList) {
 
         if (singlyLinkedList != null) {
-            SinglyLinkedList next = singlyLinkedList.getNext();
-            System.out.println(singlyLinkedList.toString());
+            SinglyLinkedList<String> next = singlyLinkedList.getNext();
+            System.out.println(singlyLinkedList);
             printSinglyLinkedList(next);
         }
     }
 
-    public static void printSinglyLinkedList1(SinglyLinkedList singlyLinkedList) {
+    public static void printSinglyLinkedList1(SinglyLinkedList<String> singlyLinkedList) {
         while (singlyLinkedList != null) {
-            SinglyLinkedList next = singlyLinkedList.getNext();
-            System.out.println(singlyLinkedList.toString());
+            SinglyLinkedList<String> next = singlyLinkedList.getNext();
+            System.out.println(singlyLinkedList);
             singlyLinkedList = next;
         }
     }
 
-    public static SinglyLinkedList reversedOrderForSinglyLinkedList(SinglyLinkedList singlyLinkedList) {
-        SinglyLinkedList last = null;
-        SinglyLinkedList next = null;
+    public static SinglyLinkedList<String> reversedOrderForSinglyLinkedList(SinglyLinkedList<String> singlyLinkedList) {
+        SinglyLinkedList<String> last = null;
+        SinglyLinkedList<String> next;
         while (singlyLinkedList != null) {
             next = singlyLinkedList.getNext();
             singlyLinkedList.setNext(last);
             last = singlyLinkedList;
             singlyLinkedList = next;
         }
-
         return last;
     }
 
     public static void main(String[] args) {
-        SinglyLinkedList singlyLinkedList = createExampleSinglyLinkedList();
+        SinglyLinkedList<String> singlyLinkedList = createExampleSinglyLinkedList();
         printSinglyLinkedList1(singlyLinkedList);
         System.out.println(("==================="));
         printSinglyLinkedList(reversedOrderForSinglyLinkedList(singlyLinkedList));

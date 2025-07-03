@@ -2,10 +2,10 @@ package com.ddc.algorithm.mashibin.linkedlist;
 
 public class ReversedOrderForDoubleLinkedList {
 
-    public static DoubleLinkedList createExampleDoubleLinkedList() {
-        DoubleLinkedList doubleLinkedList2 = new DoubleLinkedList();
-        DoubleLinkedList doubleLinkedList1 = new DoubleLinkedList();
-        DoubleLinkedList doubleLinkedList0 = new DoubleLinkedList();
+    public static DoubleLinkedList<String> createExampleDoubleLinkedList() {
+        DoubleLinkedList<String> doubleLinkedList2 = new DoubleLinkedList<>();
+        DoubleLinkedList<String> doubleLinkedList1 = new DoubleLinkedList<>();
+        DoubleLinkedList<String> doubleLinkedList0 = new DoubleLinkedList<>();
         doubleLinkedList0.setValue("1");
         doubleLinkedList0.setPrevious(null);
         doubleLinkedList0.setNext(doubleLinkedList1);
@@ -15,21 +15,20 @@ public class ReversedOrderForDoubleLinkedList {
         doubleLinkedList2.setValue("3");
         doubleLinkedList2.setPrevious(doubleLinkedList1);
         doubleLinkedList2.setNext(null);
-
         return doubleLinkedList0;
     }
 
-    public static void printDoubleLinkedList(DoubleLinkedList doubleLinkedList) {
+    public static void printDoubleLinkedList(DoubleLinkedList<String> doubleLinkedList) {
         if (doubleLinkedList != null) {
-            System.out.println(doubleLinkedList.toString());
+            System.out.println(doubleLinkedList);
             printDoubleLinkedList(doubleLinkedList.getNext());
         }
 
     }
 
-    public static DoubleLinkedList reversedOrderForDoubleLinkedList(DoubleLinkedList doubleLinkedList) {
-        DoubleLinkedList previous = null;
-        DoubleLinkedList next = null;
+    public static DoubleLinkedList<String> reversedOrderForDoubleLinkedList(DoubleLinkedList<String> doubleLinkedList) {
+        DoubleLinkedList<String> previous = null;
+        DoubleLinkedList<String> next;
         while (doubleLinkedList != null) {
             next = doubleLinkedList.getNext();
             doubleLinkedList.setNext(previous);
@@ -41,10 +40,10 @@ public class ReversedOrderForDoubleLinkedList {
     }
 
     public static void main(String[] args) {
-        DoubleLinkedList doubleLinkedList0 = createExampleDoubleLinkedList();
+        DoubleLinkedList<String> doubleLinkedList0 = createExampleDoubleLinkedList();
         printDoubleLinkedList(doubleLinkedList0);
         System.out.println("=============================");
-        DoubleLinkedList doubleLinkedList = reversedOrderForDoubleLinkedList(doubleLinkedList0);
+        DoubleLinkedList<String> doubleLinkedList = reversedOrderForDoubleLinkedList(doubleLinkedList0);
         printDoubleLinkedList(doubleLinkedList);
 
     }

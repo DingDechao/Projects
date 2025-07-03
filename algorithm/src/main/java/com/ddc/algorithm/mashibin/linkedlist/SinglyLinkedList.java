@@ -2,35 +2,35 @@ package com.ddc.algorithm.mashibin.linkedlist;
 
 import java.util.Objects;
 
-public class SinglyLinkedList {
-    private Object value;
-    private SinglyLinkedList next;
+public class SinglyLinkedList<T> {
+    private T value;
+    private SinglyLinkedList<T> next;
 
-    public SinglyLinkedList(Object value, SinglyLinkedList next) {
+    public SinglyLinkedList(T value, SinglyLinkedList<T> next) {
         this.value = value;
         this.next = next;
     }
 
-    public Object getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(Object value) {
+    public void setValue(T value) {
         this.value = value;
     }
 
-    public SinglyLinkedList getNext() {
+    public SinglyLinkedList<T> getNext() {
         return next;
     }
 
-    public void setNext(SinglyLinkedList next) {
+    public void setNext(SinglyLinkedList<T> next) {
         this.next = next;
     }
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        SinglyLinkedList that = (SinglyLinkedList) o;
+        SinglyLinkedList<?> that = (SinglyLinkedList<?>) o;
         return Objects.equals(value, that.value) && Objects.equals(next, that.next);
     }
 
