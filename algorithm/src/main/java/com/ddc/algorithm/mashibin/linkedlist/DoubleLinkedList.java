@@ -11,6 +11,10 @@ public class DoubleLinkedList<T> {
     public DoubleLinkedList() {
     }
 
+    public DoubleLinkedList(T value) {
+        this.value = value;
+    }
+
     public T getValue() {
         return value;
     }
