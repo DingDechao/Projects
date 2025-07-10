@@ -47,4 +47,5 @@
 23. Install 夸克网盘
 24. Install OBS， 39.9。。。
 24. Install Steam/雷神加速器
-24. 
+25. Install Eclipse from https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2025-06/R/eclipse-inst-jre-win64.exe&mirror_id=1299
+26. Install 搜狗输入法

@@ -4,7 +4,7 @@ public class PrintBinary {
 
 
 
-    public static void bitOperation(int number) {
+    public static void bitOperation() {
         // int 32位 long 64位
         for (var i = 31; i >=0; i--) {
            printBinaryForInt( 1 << i);
@@ -23,7 +23,7 @@ public class PrintBinary {
 
 
     public static void main(String[] args) {
-        bitOperation(1);
+        bitOperation();
         printBinaryForInt(123456);
         printBinaryForInt(Integer.MAX_VALUE);
     }
