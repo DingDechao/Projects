@@ -2,6 +2,8 @@ package com.ddc.algorithm.mashibin.tree;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 
 public class BinaryTreeTest0 {
 
@@ -30,9 +32,88 @@ public class BinaryTreeTest0 {
         return treeNode;
     }
 
-    public static void main(String[] args) {
-        LinkedList<Integer> linkedList = new LinkedList<>(Arrays.asList(3, 4, 5, 9, null, null, null, null));
-        TreeNode<Integer> treeNode = new BinaryTreeTest0().generateTreeNode(linkedList);
-        System.out.println("=============");
+
+    public void preOrderTraversal(TreeNode<Integer> treeNode) {
+        if (treeNode == null) {
+            return;
+        }
+
+        System.out.println(treeNode.value);
+        preOrderTraversal(treeNode.left);
+        preOrderTraversal(treeNode.right);
+
     }
+    public void middleOrderTraversal(TreeNode<Integer> treeNode) {
+        if (treeNode == null) {
+            return;
+        }
+
+        middleOrderTraversal(treeNode.left);
+        System.out.println(treeNode.value);
+        middleOrderTraversal(treeNode.right);
+
+    }
+
+    public void postOrderTraversal(TreeNode<Integer> treeNode) {
+        if (treeNode == null) {
+            return;
+        }
+
+        postOrderTraversal(treeNode.left);
+        postOrderTraversal(treeNode.right);
+        System.out.println(treeNode.value);
+
+    }
+
+    public void preOrderTraversalWithStack(TreeNode<Integer> treeNode) {
+        Stack<TreeNode<Integer>> stack = new Stack<>();
+        while (treeNode != null || !stack.isEmpty()) {
+            while (treeNode != null) {
+                System.out.println(treeNode.value);
+                stack.push(treeNode);
+                treeNode = treeNode.left;
+            }
+
+
+            if(!stack.isEmpty()) {
+                treeNode = stack.pop();
+                treeNode = treeNode.right;
+            }
+
+        }
+    }
+
+    public void levelOrderTraversal(TreeNode<Integer> treeNode) {
+        Queue<TreeNode<Integer>> queue = new LinkedList<>();
+        queue.offer(treeNode);
+        while (!queue.isEmpty()) {
+            TreeNode<Integer> treeNode1 = queue.poll();
+            System.out.println(treeNode1.value);
+            if(treeNode1.left != null) {
+                queue.offer(treeNode1.left);
+            }
+
+            if(treeNode1.right !=null) {
+                queue.offer(treeNode1.right);
+            }
+        }
+    }
+
+
+    public static void main(String[] args) {
+        LinkedList<Integer> linkedList = new LinkedList<>(Arrays.asList(3, 2, 9, null, null, 10, null, null, 8, null, 4));
+         BinaryTreeTest0 binaryTreeTest0 = new BinaryTreeTest0();
+        TreeNode<Integer> treeNode = binaryTreeTest0.generateTreeNode(linkedList);
+        System.out.println("=============");
+        binaryTreeTest0.preOrderTraversal(treeNode);
+        System.out.println("=============");
+        binaryTreeTest0.middleOrderTraversal(treeNode);
+        System.out.println("=============");
+        binaryTreeTest0.postOrderTraversal(treeNode);
+        System.out.println("=============");
+        binaryTreeTest0.levelOrderTraversal(treeNode);
+
+    }
+
+
 }
