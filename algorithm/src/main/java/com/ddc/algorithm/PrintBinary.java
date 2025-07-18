@@ -1,4 +1,4 @@
-package com.ddc.algorithm.mashibin;
+package com.ddc.algorithm;
 
 public class PrintBinary {
 

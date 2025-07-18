@@ -1,4 +1,4 @@
-package com.ddc.algorithm.mashibin.linkedlist;
+package com.ddc.algorithm.linkedlist;
 
 
 import java.util.Objects;

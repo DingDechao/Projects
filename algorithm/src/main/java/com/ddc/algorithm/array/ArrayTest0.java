@@ -1,4 +1,4 @@
-package com.ddc.algorithm.mashibin.array;
+package com.ddc.algorithm.array;
 
 import java.util.Arrays;
 

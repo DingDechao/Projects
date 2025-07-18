@@ -1,6 +1,4 @@
-package com.ddc.algorithm.mashibin.linkedlist;
-
-import java.util.Arrays;
+package com.ddc.algorithm.linkedlist;
 
 public class RoundRobinQueue {
 

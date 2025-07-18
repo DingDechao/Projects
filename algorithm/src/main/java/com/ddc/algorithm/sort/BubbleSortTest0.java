@@ -1,4 +1,4 @@
-package com.ddc.algorithm.mashibin.sort;
+package com.ddc.algorithm.sort;
 
 import java.util.Arrays;
 

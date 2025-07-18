@@ -1,4 +1,4 @@
-package com.ddc.algorithm.mashibin.tree;
+package com.ddc.algorithm.tree;
 
 import java.util.Arrays;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package com.ddc.algorithm.mashibin.factorial;
+package com.ddc.algorithm.factorial;
 
 public class FactorialTest0 {
 

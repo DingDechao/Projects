@@ -1,4 +1,4 @@
-package com.ddc.algorithm.mashibin.linkedlist;
+package com.ddc.algorithm.linkedlist;
 
 public class ReversedOrderForSinglyLinkedList {
 

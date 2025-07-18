@@ -1,4 +1,4 @@
-package com.ddc.algorithm.mashibin;
+package com.ddc.algorithm.bitoperation;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,14 +18,12 @@ public class BitOperationTest0 {
         Map<Integer, Integer> map = new HashMap<>();
         for (int a : array) {
             if (map.containsKey(a)) {
-                int times = map.get(a);
-                map.put(a, ++(times));
+                map.put(a, map.get(a) + 1);
             } else {
                 map.put(a, 1);
             }
         }
         System.out.println(map);
-
         print2OddNumberWithinArray(array);
     }
 
@@ -67,7 +65,6 @@ public class BitOperationTest0 {
         }
         System.out.println("One is " + oneOfOdd + ", another is " + (number ^ oneOfOdd));
     }
-
 
     public static void negationOperation(int number) {
         System.out.println(number + "取反+1得到正数/负数：" + (~number + 1));
