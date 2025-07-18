@@ -24,6 +24,7 @@ public class PrintBinary {
 
     public static void main(String[] args) {
         bitOperation();
+        printBinaryForInt(0);
         printBinaryForInt(123456);
         printBinaryForInt(Integer.MAX_VALUE);
     }
