@@ -10,7 +10,7 @@ public class BubbleSortTest0 {
 
 
     public void bubbleSort(int[] arr) {
-        for (var end = arr.length - 1 ; end >= 0; end--) {
+        for (var end = arr.length - 1 ; end > 0; end--) {
             for (var j = 1; j <= end; j++) {
                 if(arr[j] < arr[j-1]) {
                     swap(arr, j, j-1);

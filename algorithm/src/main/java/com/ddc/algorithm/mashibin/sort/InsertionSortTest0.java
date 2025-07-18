@@ -3,18 +3,18 @@ package com.ddc.algorithm.mashibin.sort;
 import java.util.Arrays;
 
 public class InsertionSortTest0 {
-    //选择排序
-    //两个两个比较，把大的往右边移动
-    //第一轮结束 最大的肯定在最右边
+    //插入排序
+    //先保证0-1上有序
+    //再保证0-2上有序
     //。。。
+    //O(N^2) -时间复杂度一般指的最差情况
+    //[7, 6 ,5, 4] 需要交换 1次，2次，3次。。。等差数列
 
 
     public void insertionSort(int[] arr) {
-        for (var end = 1; end < arr.length-1; end++) {
-            for (var j = end ; j > 0; j--) {
-                if(arr[j] < arr[j-1]) {
-                    swap(arr, j, j-1);
-                }
+        for (var end = 1; end < arr.length; end++) {
+            for (var j = end ; j > 0 && arr[j] < arr[j-1]; j--) {
+                swap(arr, j, j-1);
             }
         }
     }
@@ -31,6 +31,7 @@ public class InsertionSortTest0 {
 
     public static void main(String[] args) {
         int[] arr = {8,7,5,3,1,9};
+        //int[] arr = {3, 2 ,1};
         InsertionSortTest0 insertionSortTest0 = new InsertionSortTest0();
         insertionSortTest0.printIntArray(arr);
         insertionSortTest0.insertionSort(arr);
