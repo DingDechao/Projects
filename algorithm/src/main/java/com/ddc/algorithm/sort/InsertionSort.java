@@ -2,7 +2,7 @@ package com.ddc.algorithm.sort;
 
 import java.util.Arrays;
 
-public class InsertionSortTest0 {
+public class InsertionSort {
     //插入排序
     //先保证0-1上有序
     //再保证0-2上有序
@@ -19,7 +19,7 @@ public class InsertionSortTest0 {
         }
     }
 
-    private void swap(int[] arr, int oldIndex, int newIndex) {
+    public void swap(int[] arr, int oldIndex, int newIndex) {
         int tmp = arr[newIndex];
         arr[newIndex] = arr[oldIndex];
         arr[oldIndex] = tmp;
@@ -32,9 +32,9 @@ public class InsertionSortTest0 {
     public static void main(String[] args) {
         int[] arr = {8,7,5,3,1,9};
         //int[] arr = {3, 2 ,1};
-        InsertionSortTest0 insertionSortTest0 = new InsertionSortTest0();
-        insertionSortTest0.printIntArray(arr);
-        insertionSortTest0.insertionSort(arr);
-        insertionSortTest0.printIntArray(arr);
+        InsertionSort insertionSort = new InsertionSort();
+        insertionSort.printIntArray(arr);
+        insertionSort.insertionSort(arr);
+        insertionSort.printIntArray(arr);
     }
 }

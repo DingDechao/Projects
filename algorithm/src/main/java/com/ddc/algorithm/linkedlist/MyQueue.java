@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class MyQueue<T> {
 
-    private SinglyLinkedList<T> head;
-    private SinglyLinkedList<T> tail;
+    private SinglyListNode<T> head;
+    private SinglyListNode<T> tail;
     private int size;
 
     public MyQueue() {
@@ -18,17 +18,17 @@ public class MyQueue<T> {
         return size == 0;
     }
 
-    public SinglyLinkedList<T> offer(T value) {
-        SinglyLinkedList<T> singlyLinkedList = new SinglyLinkedList<>(value);
+    public SinglyListNode<T> offer(T value) {
+        SinglyListNode<T> singlyListNode = new SinglyListNode<>(value);
         if (tail == null) {
-            head = singlyLinkedList;
-            tail = singlyLinkedList;
+            head = singlyListNode;
+            tail = singlyListNode;
         } else {
-            tail.setNext(singlyLinkedList);
-            tail = singlyLinkedList;
+            tail.setNext(singlyListNode);
+            tail = singlyListNode;
         }
         size++;
-        return singlyLinkedList;
+        return singlyListNode;
     }
 
     public T poll() {
@@ -50,19 +50,19 @@ public class MyQueue<T> {
         return value;
     }
 
-    public SinglyLinkedList<T> getHead() {
+    public SinglyListNode<T> getHead() {
         return head;
     }
 
-    public void setHead(SinglyLinkedList<T> head) {
+    public void setHead(SinglyListNode<T> head) {
         this.head = head;
     }
 
-    public SinglyLinkedList<T> getTail() {
+    public SinglyListNode<T> getTail() {
         return tail;
     }
 
-    public void setTail(SinglyLinkedList<T> tail) {
+    public void setTail(SinglyListNode<T> tail) {
         this.tail = tail;
     }
 

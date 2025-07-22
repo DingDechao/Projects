@@ -1,12 +1,12 @@
 package com.ddc.algorithm.linkedlist;
 
-public class RoundRobinQueue {
+public class RoundRobinQueue0 {
 
     private int[] roundRobinQueue;
     private int front;
     private int rear;
 
-    public RoundRobinQueue(int capacity) {
+    public RoundRobinQueue0(int capacity) {
         roundRobinQueue = new int[capacity];
         front = 0;
         rear  = 0;
@@ -33,7 +33,6 @@ public class RoundRobinQueue {
 
 
     private void printQueue() {
-//        System.out.println(Arrays.toString(roundRobinQueue));
         for(var i = front; i != rear; i=(i+1)%roundRobinQueue.length) {
             System.out.print(roundRobinQueue[i] + " ");
         }
@@ -43,12 +42,12 @@ public class RoundRobinQueue {
 
 
     public static void main(String[] args) throws Exception {
-        RoundRobinQueue roundRobinQueue1 = new RoundRobinQueue(5);
-        //roundRobinQueue1.pop();
-        roundRobinQueue1.printQueue();
-        roundRobinQueue1.push(1);
-        roundRobinQueue1.printQueue();
-        roundRobinQueue1.pop();
-        roundRobinQueue1.printQueue();
+        RoundRobinQueue0 roundRobinQueue01 = new RoundRobinQueue0(5);
+        //roundRobinQueue01.pop();
+        roundRobinQueue01.printQueue();
+        roundRobinQueue01.push(1);
+        roundRobinQueue01.printQueue();
+        roundRobinQueue01.pop();
+        roundRobinQueue01.printQueue();
     }
 }

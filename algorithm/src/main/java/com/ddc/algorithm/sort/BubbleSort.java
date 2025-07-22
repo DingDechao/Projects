@@ -2,7 +2,7 @@ package com.ddc.algorithm.sort;
 
 import java.util.Arrays;
 
-public class BubbleSortTest0 {
+public class BubbleSort {
     //冒泡排序
     //两个两个比较，把大的往右边移动
     //第一轮结束 最大的肯定在最右边
@@ -19,7 +19,7 @@ public class BubbleSortTest0 {
         }
     }
 
-    private void swap(int[] arr, int oldIndex, int newIndex) {
+    public void swap(int[] arr, int oldIndex, int newIndex) {
         int tmp = arr[newIndex];
         arr[newIndex] = arr[oldIndex];
         arr[oldIndex] = tmp;
@@ -31,9 +31,9 @@ public class BubbleSortTest0 {
 
     public static void main(String[] args) {
         int[] arr = {8,7,5,3,1,9};
-        BubbleSortTest0 bubbleSortTest0 = new BubbleSortTest0();
-        bubbleSortTest0.printIntArray(arr);
-        bubbleSortTest0.bubbleSort(arr);
-        bubbleSortTest0.printIntArray(arr);
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.printIntArray(arr);
+        bubbleSort.bubbleSort(arr);
+        bubbleSort.printIntArray(arr);
     }
 }

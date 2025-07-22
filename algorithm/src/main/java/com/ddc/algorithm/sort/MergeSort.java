@@ -1,4 +1,4 @@
-package com.ddc.algorithm.array;
+package com.ddc.algorithm.sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -2,49 +2,49 @@ package com.ddc.algorithm.linkedlist;
 
 public class ReversedOrderForDoubleLinkedList {
 
-    public static DoubleLinkedList<String> createExampleDoubleLinkedList() {
-        DoubleLinkedList<String> doubleLinkedList2 = new DoubleLinkedList<>();
-        DoubleLinkedList<String> doubleLinkedList1 = new DoubleLinkedList<>();
-        DoubleLinkedList<String> doubleLinkedList0 = new DoubleLinkedList<>();
-        doubleLinkedList0.setValue("1");
-        doubleLinkedList0.setPrevious(null);
-        doubleLinkedList0.setNext(doubleLinkedList1);
-        doubleLinkedList1.setValue("2");
-        doubleLinkedList1.setPrevious(doubleLinkedList0);
-        doubleLinkedList1.setNext(doubleLinkedList2);
-        doubleLinkedList2.setValue("3");
-        doubleLinkedList2.setPrevious(doubleLinkedList1);
-        doubleLinkedList2.setNext(null);
-        return doubleLinkedList0;
+    public static DoubleListNode<String> createExampleDoubleLinkedList() {
+        DoubleListNode<String> doubleListNode2 = new DoubleListNode<>();
+        DoubleListNode<String> doubleListNode1 = new DoubleListNode<>();
+        DoubleListNode<String> doubleListNode0 = new DoubleListNode<>();
+        doubleListNode0.setValue("1");
+        doubleListNode0.setPrevious(null);
+        doubleListNode0.setNext(doubleListNode1);
+        doubleListNode1.setValue("2");
+        doubleListNode1.setPrevious(doubleListNode0);
+        doubleListNode1.setNext(doubleListNode2);
+        doubleListNode2.setValue("3");
+        doubleListNode2.setPrevious(doubleListNode1);
+        doubleListNode2.setNext(null);
+        return doubleListNode0;
     }
 
-    public static void printDoubleLinkedList(DoubleLinkedList<String> doubleLinkedList) {
-        if (doubleLinkedList != null) {
-            System.out.println(doubleLinkedList);
-            printDoubleLinkedList(doubleLinkedList.getNext());
+    public static void printDoubleLinkedList(DoubleListNode<String> doubleListNode) {
+        if (doubleListNode != null) {
+            System.out.println(doubleListNode);
+            printDoubleLinkedList(doubleListNode.getNext());
         }
 
     }
 
-    public static DoubleLinkedList<String> reversedOrderForDoubleLinkedList(DoubleLinkedList<String> doubleLinkedList) {
-        DoubleLinkedList<String> previous = null;
-        DoubleLinkedList<String> next;
-        while (doubleLinkedList != null) {
-            next = doubleLinkedList.getNext();
-            doubleLinkedList.setNext(previous);
-            doubleLinkedList.setPrevious(next);
-            previous = doubleLinkedList;
-            doubleLinkedList = next;
+    public static DoubleListNode<String> reversedOrderForDoubleLinkedList(DoubleListNode<String> doubleListNode) {
+        DoubleListNode<String> previous = null;
+        DoubleListNode<String> next;
+        while (doubleListNode != null) {
+            next = doubleListNode.getNext();
+            doubleListNode.setNext(previous);
+            doubleListNode.setPrevious(next);
+            previous = doubleListNode;
+            doubleListNode = next;
         }
         return previous;
     }
 
     public static void main(String[] args) {
-        DoubleLinkedList<String> doubleLinkedList0 = createExampleDoubleLinkedList();
-        printDoubleLinkedList(doubleLinkedList0);
+        DoubleListNode<String> doubleListNode0 = createExampleDoubleLinkedList();
+        printDoubleLinkedList(doubleListNode0);
         System.out.println("=============================");
-        DoubleLinkedList<String> doubleLinkedList = reversedOrderForDoubleLinkedList(doubleLinkedList0);
-        printDoubleLinkedList(doubleLinkedList);
+        DoubleListNode<String> doubleListNode = reversedOrderForDoubleLinkedList(doubleListNode0);
+        printDoubleLinkedList(doubleListNode);
 
     }
 }

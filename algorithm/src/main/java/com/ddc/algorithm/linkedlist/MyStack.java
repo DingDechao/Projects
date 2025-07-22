@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class MyStack<T> {
 
-    private SinglyLinkedList<T> tail;
+    private SinglyListNode<T> tail;
     private int size;
 
     public MyStack() {
@@ -16,16 +16,16 @@ public class MyStack<T> {
         return size == 0;
     }
 
-    public SinglyLinkedList<T> push(T value) {
-        SinglyLinkedList<T> singlyLinkedList = new SinglyLinkedList<>(value);
+    public SinglyListNode<T> push(T value) {
+        SinglyListNode<T> singlyListNode = new SinglyListNode<>(value);
         if (tail == null) {
-            tail = singlyLinkedList;
+            tail = singlyListNode;
         } else {
-            singlyLinkedList.setNext(tail);
-            tail = singlyLinkedList;
+            singlyListNode.setNext(tail);
+            tail = singlyListNode;
         }
         size++;
-        return singlyLinkedList;
+        return singlyListNode;
     }
 
     public T pop() {
@@ -47,11 +47,11 @@ public class MyStack<T> {
     }
 
 
-    public SinglyLinkedList<T> getTail() {
+    public SinglyListNode<T> getTail() {
         return tail;
     }
 
-    public void setTail(SinglyLinkedList<T> tail) {
+    public void setTail(SinglyListNode<T> tail) {
         this.tail = tail;
     }
 

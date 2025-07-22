@@ -3,15 +3,15 @@ package com.ddc.algorithm.linkedlist;
 
 import java.util.Objects;
 
-public class DoubleLinkedList<T> {
+public class DoubleListNode<T> {
     private T value;
-    private DoubleLinkedList<T> previous;
-    private DoubleLinkedList<T> next;
+    private DoubleListNode<T> previous;
+    private DoubleListNode<T> next;
 
-    public DoubleLinkedList() {
+    public DoubleListNode() {
     }
 
-    public DoubleLinkedList(T value) {
+    public DoubleListNode(T value) {
         this.value = value;
     }
 
@@ -23,26 +23,26 @@ public class DoubleLinkedList<T> {
         this.value = value;
     }
 
-    public DoubleLinkedList<T> getPrevious() {
+    public DoubleListNode<T> getPrevious() {
         return previous;
     }
 
-    public void setPrevious(DoubleLinkedList<T> previous) {
+    public void setPrevious(DoubleListNode<T> previous) {
         this.previous = previous;
     }
 
-    public DoubleLinkedList<T> getNext() {
+    public DoubleListNode<T> getNext() {
         return next;
     }
 
-    public void setNext(DoubleLinkedList<T> next) {
+    public void setNext(DoubleListNode<T> next) {
         this.next = next;
     }
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        DoubleLinkedList<?> that = (DoubleLinkedList<?>) o;
+        DoubleListNode<?> that = (DoubleListNode<?>) o;
         return Objects.equals(value, that.value) && Objects.equals(previous, that.previous) && Objects.equals(next, that.next);
     }
 
@@ -53,7 +53,7 @@ public class DoubleLinkedList<T> {
 
     @Override
     public String toString() {
-        return "DoubleLinkedList{" +
+        return "DoubleListNode{" +
                 "value=" + value +
                 ", previous=" + (previous !=null ? previous.getValue().toString() : null) +
                 ", next=" + (next !=null ? next.getValue().toString() : null) +

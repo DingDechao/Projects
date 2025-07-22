@@ -2,45 +2,45 @@ package com.ddc.algorithm.linkedlist;
 
 public class ReversedOrderForSinglyLinkedList {
 
-    public static SinglyLinkedList<String> createExampleSinglyLinkedList() {
-        SinglyLinkedList<String> singlyLinkedList2 = new SinglyLinkedList<>("3", null);
-        SinglyLinkedList<String> singlyLinkedList1 = new SinglyLinkedList<>("2", singlyLinkedList2);
-        return new SinglyLinkedList<>("1", singlyLinkedList1);
+    public static SinglyListNode<String> createExampleSinglyLinkedList() {
+        SinglyListNode<String> singlyListNode2 = new SinglyListNode<>("3", null);
+        SinglyListNode<String> singlyListNode1 = new SinglyListNode<>("2", singlyListNode2);
+        return new SinglyListNode<>("1", singlyListNode1);
     }
 
-    public static void printSinglyLinkedList(SinglyLinkedList<String> singlyLinkedList) {
+    public static void printSinglyLinkedList(SinglyListNode<String> singlyListNode) {
 
-        if (singlyLinkedList != null) {
-            SinglyLinkedList<String> next = singlyLinkedList.getNext();
-            System.out.println(singlyLinkedList);
+        if (singlyListNode != null) {
+            SinglyListNode<String> next = singlyListNode.getNext();
+            System.out.println(singlyListNode);
             printSinglyLinkedList(next);
         }
     }
 
-    public static void printSinglyLinkedList1(SinglyLinkedList<String> singlyLinkedList) {
-        while (singlyLinkedList != null) {
-            SinglyLinkedList<String> next = singlyLinkedList.getNext();
-            System.out.println(singlyLinkedList);
-            singlyLinkedList = next;
+    public static void printSinglyLinkedList1(SinglyListNode<String> singlyListNode) {
+        while (singlyListNode != null) {
+            SinglyListNode<String> next = singlyListNode.getNext();
+            System.out.println(singlyListNode);
+            singlyListNode = next;
         }
     }
 
-    public static SinglyLinkedList<String> reversedOrderForSinglyLinkedList(SinglyLinkedList<String> singlyLinkedList) {
-        SinglyLinkedList<String> last = null;
-        SinglyLinkedList<String> next;
-        while (singlyLinkedList != null) {
-            next = singlyLinkedList.getNext();
-            singlyLinkedList.setNext(last);
-            last = singlyLinkedList;
-            singlyLinkedList = next;
+    public static SinglyListNode<String> reversedOrderForSinglyLinkedList(SinglyListNode<String> singlyListNode) {
+        SinglyListNode<String> last = null;
+        SinglyListNode<String> next;
+        while (singlyListNode != null) {
+            next = singlyListNode.getNext();
+            singlyListNode.setNext(last);
+            last = singlyListNode;
+            singlyListNode = next;
         }
         return last;
     }
 
     public static void main(String[] args) {
-        SinglyLinkedList<String> singlyLinkedList = createExampleSinglyLinkedList();
-        printSinglyLinkedList1(singlyLinkedList);
+        SinglyListNode<String> singlyListNode = createExampleSinglyLinkedList();
+        printSinglyLinkedList1(singlyListNode);
         System.out.println(("==================="));
-        printSinglyLinkedList(reversedOrderForSinglyLinkedList(singlyLinkedList));
+        printSinglyLinkedList(reversedOrderForSinglyLinkedList(singlyListNode));
     }
 }

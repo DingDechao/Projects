@@ -10,15 +10,15 @@ public class Merge2OrderedLinkedTable {
      *  1 -> 2 -> 3 -> 4 -> 5 -> 6
      * */
 
-    public SinglyLinkedList<Integer> merge2OrderedLinkedTable(SinglyLinkedList<Integer> first, SinglyLinkedList<Integer> second) {
+    public SinglyListNode<Integer> merge2OrderedLinkedTable(SinglyListNode<Integer> first, SinglyListNode<Integer> second) {
 
         if (first == null || second == null) {
             return first == null ? second : first;
         }
-        SinglyLinkedList<Integer> head = first.getValue() <= second.getValue() ? first : second;
-        SinglyLinkedList<Integer> current = head;
-        SinglyLinkedList<Integer> head1 = head.getNext();
-        SinglyLinkedList<Integer> another1 = (head == first ? second : first);
+        SinglyListNode<Integer> head = first.getValue() <= second.getValue() ? first : second;
+        SinglyListNode<Integer> current = head;
+        SinglyListNode<Integer> head1 = head.getNext();
+        SinglyListNode<Integer> another1 = (head == first ? second : first);
         ;
         while (head1 != null && another1 != null) {
             if (head1.getValue() <= another1.getValue()) {
@@ -39,16 +39,16 @@ public class Merge2OrderedLinkedTable {
         return head;
     }
 
-    public SinglyLinkedList<Integer> generateFirstLinkedTable() {
-        SinglyLinkedList<Integer> singlyLinkedList2 = new SinglyLinkedList<>(5, null);
-        SinglyLinkedList<Integer> singlyLinkedList1 = new SinglyLinkedList<>(3, singlyLinkedList2);
-        return new SinglyLinkedList<>(1, singlyLinkedList1);
+    public SinglyListNode<Integer> generateFirstLinkedTable() {
+        SinglyListNode<Integer> singlyListNode2 = new SinglyListNode<>(5, null);
+        SinglyListNode<Integer> singlyListNode1 = new SinglyListNode<>(3, singlyListNode2);
+        return new SinglyListNode<>(1, singlyListNode1);
     }
 
-    public SinglyLinkedList<Integer> generateSecondLinkedTable() {
-        SinglyLinkedList<Integer> singlyLinkedList2 = new SinglyLinkedList<>(6, null);
-        SinglyLinkedList<Integer> singlyLinkedList1 = new SinglyLinkedList<>(4, singlyLinkedList2);
-        return new SinglyLinkedList<>(2, singlyLinkedList1);
+    public SinglyListNode<Integer> generateSecondLinkedTable() {
+        SinglyListNode<Integer> singlyListNode2 = new SinglyListNode<>(6, null);
+        SinglyListNode<Integer> singlyListNode1 = new SinglyListNode<>(4, singlyListNode2);
+        return new SinglyListNode<>(2, singlyListNode1);
     }
 
     public static void main(String[] args) {

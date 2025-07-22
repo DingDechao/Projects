@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class MyDeque<T> {
 
-    private DoubleLinkedList<T> head;
-    private DoubleLinkedList<T> tail;
+    private DoubleListNode<T> head;
+    private DoubleListNode<T> tail;
     private int size;
 
     public MyDeque() {
@@ -18,33 +18,33 @@ public class MyDeque<T> {
         return size == 0;
     }
 
-    public DoubleLinkedList<T> pushHead(T value) {
-        DoubleLinkedList<T> doubleLinkedList = new DoubleLinkedList<>(value);
+    public DoubleListNode<T> pushHead(T value) {
+        DoubleListNode<T> doubleListNode = new DoubleListNode<>(value);
         if (head == null) {
-            head = doubleLinkedList;
-            tail = doubleLinkedList;
+            head = doubleListNode;
+            tail = doubleListNode;
         } else {
-            head.setPrevious(doubleLinkedList);
-            doubleLinkedList.setNext(head);
-            head = doubleLinkedList;
+            head.setPrevious(doubleListNode);
+            doubleListNode.setNext(head);
+            head = doubleListNode;
         }
         size++;
-        return doubleLinkedList;
+        return doubleListNode;
 
     }
 
-    public DoubleLinkedList<T> pushTail(T value) {
-        DoubleLinkedList<T> doubleLinkedList = new DoubleLinkedList<>(value);
+    public DoubleListNode<T> pushTail(T value) {
+        DoubleListNode<T> doubleListNode = new DoubleListNode<>(value);
         if (tail == null) {
-            tail = doubleLinkedList;
-            head = doubleLinkedList;
+            tail = doubleListNode;
+            head = doubleListNode;
         } else {
-            tail.setNext(doubleLinkedList);
-            doubleLinkedList.setPrevious(tail);
-            tail = doubleLinkedList;
+            tail.setNext(doubleListNode);
+            doubleListNode.setPrevious(tail);
+            tail = doubleListNode;
         }
         size++;
-        return doubleLinkedList;
+        return doubleListNode;
     }
 
     public T pollHead() {
@@ -98,19 +98,19 @@ public class MyDeque<T> {
     }
 
 
-    public DoubleLinkedList<T> getHead() {
+    public DoubleListNode<T> getHead() {
         return head;
     }
 
-    public void setHead(DoubleLinkedList<T> head) {
+    public void setHead(DoubleListNode<T> head) {
         this.head = head;
     }
 
-    public DoubleLinkedList<T> getTail() {
+    public DoubleListNode<T> getTail() {
         return tail;
     }
 
-    public void setTail(DoubleLinkedList<T> tail) {
+    public void setTail(DoubleListNode<T> tail) {
         this.tail = tail;
     }
 
