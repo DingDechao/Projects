@@ -114,10 +114,10 @@ public class MergeSort {
         int middle = L + ((R - L) >> 1);
         processAndReversePair(array, L, middle, result);
         processAndReversePair(array, middle + 1, R, result);
-        mergeAndCReversePair(array, L, middle, R, result);
+        mergeAndReversePair(array, L, middle, R, result);
     }
 
-    public void mergeAndCReversePair(int[] array, int L, int M, int R, List result) {
+    public void mergeAndReversePair(int[] array, int L, int M, int R, List result) {
         int[] temp = new int[R - L + 1];
         int tempIndex = temp.length - 1;
         int pL = M;
@@ -146,12 +146,57 @@ public class MergeSort {
         }
     }
 
+    public void processAndBiggerThanRightTwice(int[] array, int L, int R, List<String> result) {
+        if (L == R) {
+            return;
+        }
+
+        int middle = L + ((R - L) >> 1);
+        processAndBiggerThanRightTwice(array, L, middle, result);
+        processAndBiggerThanRightTwice(array, middle + 1, R, result);
+        mergeAndBiggerThanRightTwice(array, L, middle, R, result);
+    }
+
+    public void mergeAndBiggerThanRightTwice(int[] array, int L, int M, int R, List<String> result) {
+        int windowR = M + 1;
+        for (int i = L; i <= M; i++) {
+            while (windowR <= R && array[i] > array[windowR] * 2) {
+                windowR++;
+            }
+            for (var j = M + 1; j < windowR ; j++) {
+                result.add(array[i] + "," + array[j]);
+            }
+        }
+
+
+        int[] temp = new int[R - L + 1];
+        int tempIndex = temp.length - 1;
+        int pL = M;
+        int pR = R;
+        while (pL >= L && pR > M) {
+            temp[tempIndex--] = array[pL] > array[pR] ? array[pL--] : array[pR--];
+        }
+
+        while (pL >= L) {
+            temp[tempIndex--] = array[pL--];
+        }
+
+        while (pR > M) {
+            temp[tempIndex--] = array[pR--];
+        }
+
+        for (var i = 0; i < temp.length; i++) {
+            array[L + i] = temp[i];
+        }
+    }
+
 
     public static void main(String[] args) {
         MergeSort mergeSort = new MergeSort();
         int[] array = new int[]{1, 2, 2, 3, 5, 3, 7};
         int[] arrayAndCalculate = Arrays.copyOf(array, array.length);
         int[] arrayAndReversePair = Arrays.copyOf(array, array.length);
+        int[] arrayAndBiggerThanRightTwice = Arrays.copyOf(array, array.length);
         mergeSort.process(array, 0, array.length - 1);
         System.out.println(Arrays.toString(array));
         int result = mergeSort.processAndCalculate(arrayAndCalculate, 0, arrayAndCalculate.length - 1);
@@ -159,6 +204,11 @@ public class MergeSort {
         List list = new ArrayList();
         mergeSort.processAndReversePair(arrayAndReversePair, 0, arrayAndCalculate.length - 1, list);
         System.out.println(list);
+        List<String> list1 = new ArrayList();
+
+        int[] array8 = new int[]{9, 2, 2, 3, 5, 4, 7};
+        mergeSort.processAndBiggerThanRightTwice(array8, 0, arrayAndBiggerThanRightTwice.length - 1, list1);
+        System.out.println(list1);
 //        test();
     }
 
