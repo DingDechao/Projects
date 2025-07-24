@@ -106,7 +106,7 @@ public class MergeSort {
         return result;
     }
 
-    public void processAndReversePair(int[] array, int L, int R, List result) {
+    public void processAndReversePair(int[] array, int L, int R, List<String> result) {
         if (L == R) {
             return;
         }
@@ -117,7 +117,7 @@ public class MergeSort {
         mergeAndReversePair(array, L, middle, R, result);
     }
 
-    public void mergeAndReversePair(int[] array, int L, int M, int R, List result) {
+    public void mergeAndReversePair(int[] array, int L, int M, int R, List<String> result) {
         int[] temp = new int[R - L + 1];
         int tempIndex = temp.length - 1;
         int pL = M;
@@ -196,20 +196,18 @@ public class MergeSort {
         int[] array = new int[]{1, 2, 2, 3, 5, 3, 7};
         int[] arrayAndCalculate = Arrays.copyOf(array, array.length);
         int[] arrayAndReversePair = Arrays.copyOf(array, array.length);
-        int[] arrayAndBiggerThanRightTwice = Arrays.copyOf(array, array.length);
         mergeSort.process(array, 0, array.length - 1);
         System.out.println(Arrays.toString(array));
         int result = mergeSort.processAndCalculate(arrayAndCalculate, 0, arrayAndCalculate.length - 1);
         System.out.println(result);
-        List list = new ArrayList();
+        List<String> list = new ArrayList<>();
         mergeSort.processAndReversePair(arrayAndReversePair, 0, arrayAndCalculate.length - 1, list);
         System.out.println(list);
-        List<String> list1 = new ArrayList();
+        List<String> list1 = new ArrayList<>();
 
         int[] array8 = new int[]{9, 2, 2, 3, 5, 4, 7};
-        mergeSort.processAndBiggerThanRightTwice(array8, 0, arrayAndBiggerThanRightTwice.length - 1, list1);
+        mergeSort.processAndBiggerThanRightTwice(array8, 0, array8.length - 1, list1);
         System.out.println(list1);
-//        test();
     }
 
     public static void test() {
