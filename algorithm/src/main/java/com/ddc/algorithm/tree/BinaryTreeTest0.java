@@ -1,9 +1,6 @@
 package com.ddc.algorithm.tree;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class BinaryTreeTest0 {
 
@@ -98,6 +95,33 @@ public class BinaryTreeTest0 {
             }
         }
     }
+
+    public void preSerialization(TreeNode<Integer> treeNode, List<String> result) {
+        if (treeNode == null) {
+            result.add(null);
+        } else {
+            result.add(String.valueOf(treeNode.value));
+            preSerialization(treeNode.left, result);
+            preSerialization(treeNode.right, result);
+        }
+    }
+
+    public void preDeserialization0(TreeNode<Integer> treeNode, List<String> result) {
+        if (result.isEmpty() ) {
+            return;
+        }
+
+        String s = result.get(0);
+        result.remove(0);
+        if (s == null) {
+            return;
+        }
+        int a = Integer.parseInt(s);
+        treeNode.value = a;
+        preDeserialization0(treeNode.left, result);
+        preDeserialization0(treeNode.right, result);
+    }
+
 
 
     public static void main(String[] args) {
