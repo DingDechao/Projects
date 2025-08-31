@@ -1,10 +1,21 @@
 package com.ddc.algorithm;
 
+import java.math.BigDecimal;
+
 public class Test {
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
-        solution.hammingWeight(11);
+//        Solution solution = new Solution();
+//        solution.hammingWeight(11);
+
+        int number = 30_0000;
+//        BigDecimal bigDecimal = new BigDecimal((3d )/100/12, 2);
+        double rate = 3d / 100/ 12;
+        System.out.println(String.valueOf(number / 36 /2));
+//        for (int i = 1 ; i <= 36; i++) {
+//            double principal = 0;
+//            double interest = number * rate;
+//        }
     }
 }
 
