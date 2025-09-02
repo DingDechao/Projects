@@ -1,33 +1,69 @@
 # Software list for Mac
-- Youdao Dict
-- Virtual Box
-- iTerm 2
-- Docker
-- JetBrians Toolbox
-- IntelliJ IDEA CE
-- XMind ZEN
-- Visual Studio Code
+- Xnip
+- OBS
+- 解忧专业版
+- WPS office
+- Wireshark
+- ClashX
+- 迅雷
+- Gmail
+- Google Chrome
 - Momentum (Chrome plugin)
 - SwitchyOmega (Chrome plugin)
 - JSON Formatter (Chrome plugin)
-- MySQL
-- DBeaver
-- MySQLWorkbench
-- homebrew
-- Google Chrome
-- Google Chrome Canary
+- Google 云端硬盘
+- Google 文档
+- Google 幻灯片
+- Google 表格
 - Sublime Text
-- Netease Music
-- WeChat
-- Youdao Note
+- Typora
+- 网易有道词典
+- 印象笔记
+- 有道云笔记
+- 网易云音乐
+- 百度网盘
+- 阿里云盘
+- 夸克
+- MarginNote 3
+- Kindle Classic
+- XMind
+- 微信
+- QQ
+- iTerm
+- draw.io
+- IDLE
+- Python Language
 - Postman
-- Kindle
+- GitHub Desktop
+- Xcode
+- Docker
+- JetBrians Toolbox
+- IntelliJ IDEA CE
+- Eclipse
+- Visual Studio Code
+- DBeaver
+- MySQL version?
+- MySQLWorkbench
+- Final Cut Pro
+- 暴风影音
+- 优酷
+- 爱奇艺
+- YouTube
+- zoom.us
+- 腾讯会议
+
+---
+# Development environment setup on Mac
+# To be updated by Dechao
+- homebrew
+- jdk 1.8
+- maven
+- ssh key
+- jenkins
 - xcode-select --install
 - MongoDB + Compass
-- StarUML
 - Sonar
 
-# U3419W
 
 ##### How to install homebrew on Mac
 ```
