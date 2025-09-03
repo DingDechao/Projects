@@ -3,6 +3,7 @@
 - OBS
 - 解忧专业版
 - WPS office
+- V2RayX
 - Wireshark
 - ClashX
 - 迅雷
@@ -21,6 +22,7 @@
 - 印象笔记
 - 有道云笔记
 - 网易云音乐
+- 网易邮箱大师
 - 百度网盘
 - 阿里云盘
 - 夸克
@@ -39,12 +41,15 @@
 - Docker
 - JetBrians Toolbox
 - IntelliJ IDEA CE
+- PyCharm CE
+- Eclipse Installer
 - Eclipse
 - Visual Studio Code
 - DBeaver
 - MySQL version?
 - MySQLWorkbench
 - Final Cut Pro
+- 爱剪辑
 - 暴风影音
 - 优酷
 - 爱奇艺
