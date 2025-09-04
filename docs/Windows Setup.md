@@ -1,4 +1,47 @@
 # Software list for Windows
+- OBS
+- WinRAR
+- 搜狗输入法
+- Adobe Acrobat
+- Office 2024 Excel
+- Office 2024 OneNote
+- Office 2024 Outlook
+- Office 2024 PowerPoint
+- Office 2024 Word
+- WPS office
+- Shadowsocks
+- 迅雷 //未安装
+- Google Chrome
+- Momentum (Chrome plugin)
+- SwitchyOmega (Chrome plugin)
+- JSON Formatter (Chrome plugin)
+- Notepad++
+- 网易有道词典
+- 印象笔记
+- 有道云笔记
+- 网易云音乐
+- 网易邮箱大师
+- 百度网盘
+- Kindle Classic
+- 微信
+- QQ
+- QQ游戏
+- draw.io
+- Postman
+- Git Bash
+- JetBrians Toolbox
+- IntelliJ IDEA CE
+- Eclipse
+- Visual Studio Code
+- DBeaver
+- MySQL version?
+- MySQLWorkbench
+- 优酷
+- zoom.us
+- 腾讯会议
+
+
+
 ## JDK
 ## Sonarqube 6.7.7 (7.X and 8.x require higher JDK version)
 ### How to install sonarqube 6.7.0 in windows
