@@ -1,4 +1,5 @@
 # Software list for Windows
+explorer shell:AppsFolder //在Windows上打开应用列表
 - OBS
 - WinRAR
 - 搜狗输入法
