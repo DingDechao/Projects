@@ -11,6 +11,7 @@
 - WPS office
 - Shadowsocks
 - 迅雷 //未安装
+- Kimi
 - Google Chrome
 - Momentum (Chrome plugin)
 - SwitchyOmega (Chrome plugin)
