@@ -31,7 +31,7 @@ public class BubbleSort {
         }
     }
 
-    public void swap(int[] arr, int oldIndex, int newIndex) {
+    private void swap(int[] arr, int oldIndex, int newIndex) {
         int tmp = arr[newIndex];
         arr[newIndex] = arr[oldIndex];
         arr[oldIndex] = tmp;
