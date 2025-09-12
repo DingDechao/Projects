@@ -1,6 +1,8 @@
 package com.ddc.algorithm.sort;
 
 import java.util.Arrays;
+import java.util.Map;
+import java.util.Stack;
 
 public class QuickSort {
     //快速排序
@@ -9,7 +11,6 @@ public class QuickSort {
     //3.对左边和右边的数组重复1、2步骤，直到数组有序
     // 时间复杂度O(N*logN)
     // 实现方式有两种，双边循环法和单边循环法
-
 
 
     public static void quickSort1(int[] arr) {
@@ -90,6 +91,38 @@ public class QuickSort {
         return new int[]{less, less}; //返回等于基准数的区域
     }
 
+
+    public static void quickSort3(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return;
+        }
+        process3(arr, 0, arr.length - 1); //递归调用
+    }
+
+    // 非递归方式实现快速排序
+    // 使用栈来模拟递归过程
+    // 每次处理一个子数组时，将其左右边界入栈
+    // 处理完后，将子数组的左右边界出栈
+    // 重复上述过程，直到栈为空
+    public static void process3(int[] arr, int L, int R) {
+        if (L >= R) {
+            return;
+        }
+        Stack<Map<String, Integer>> stack = new Stack<>();
+        stack.push(Map.of("L", L, "R", R));
+        while (!stack.isEmpty()) {
+            Map<String, Integer> cur = stack.pop();
+            int left = cur.get("L");
+            int right = cur.get("R");
+            if (left < right) {
+                swap(arr, left + (int) (Math.random() * (right - left + 1)), right);
+                int[] p = partition2(arr, left, right);
+                stack.push(Map.of("L", left, "R", p[0] - 1));
+                stack.push(Map.of("L", p[1] + 1, "R", right));
+            }
+        }
+    }
+
     private static void swap(int[] arr, int oldIndex, int newIndex) {
         int tmp = arr[newIndex];
         arr[newIndex] = arr[oldIndex];
@@ -113,5 +146,11 @@ public class QuickSort {
         System.out.println("排序后：");
         System.out.println(Arrays.toString(arr2));
 
+        int[] arr3 = {2, 3, 4, 5, 6, 7, 8, 9, 1};
+        System.out.println("排序前：");
+        System.out.println(Arrays.toString(arr3));
+        quickSort3(arr3);
+        System.out.println("排序后：");
+        System.out.println(Arrays.toString(arr3));
     }
 }
