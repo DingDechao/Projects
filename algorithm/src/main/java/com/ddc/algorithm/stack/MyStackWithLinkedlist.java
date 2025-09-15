@@ -40,4 +40,16 @@ public class MyStackWithLinkedlist {
         anotherQueue = temp;
         return element;
     }
+
+    public static void main(String[] args) {
+        MyStackWithLinkedlist stack = new MyStackWithLinkedlist();
+        stack.push(3);
+        System.out.println(stack.peek());
+        stack.push(4);
+        System.out.println(stack.peek());
+        stack.push(1);
+        System.out.println(stack.peek());
+        System.out.println(stack.pop());
+        System.out.println(stack.peek());
+    }
 }
