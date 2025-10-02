@@ -38,6 +38,7 @@ explorer shell:AppsFolder //在Windows上打开应用列表
 - DBeaver
 - MySQL version?
 - MySQLWorkbench
+- 剪映专业版
 - 优酷
 - zoom.us
 - 腾讯会议
