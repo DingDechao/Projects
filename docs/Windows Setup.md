@@ -42,6 +42,7 @@ explorer shell:AppsFolder //在Windows上打开应用列表
 - 优酷
 - zoom.us
 - 腾讯会议
+- duplicatecleaner - Only for Windows:https://www.duplicatecleaner.com/
 
 
 
