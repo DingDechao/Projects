@@ -76,7 +76,36 @@ public class MazeBasic {
         return dp[endX][endY];
     }
 
-
-
+//    public static int findShortestPathBFS(int[][] maze, int startX, int startY, int endX, int endY) {
+//        if (maze == null || maze.length == 0) return -1;
+//        int N = maze.length, M = maze[0].length;
+//        // 边界和障碍检查
+//        if (startX < 0 || startX >= N || startY < 0 || startY >= M ||
+//                endX < 0 || endX >= N || endY < 0 || endY >= M) {
+//            return -1;
+//        }
+//        if (maze[startX][startY] == 1 || maze[endX][endY] == 1) return -1;
+//        if (startX == endX && startY == endY) return 0;
+//
+//        boolean[][] visited = new boolean[N][M];
+//        int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+//        java.util.Queue<int[]> q = new java.util.LinkedList<>();
+//        q.offer(new int[]{startX, startY, 0});
+//        visited[startX][startY] = true;
+//
+//        while (!q.isEmpty()) {
+//            int[] cur = q.poll();
+//            int x = cur[0], y = cur[1], dist = cur[2];
+//            for (int[] d : dirs) {
+//                int nx = x + d[0], ny = y + d[1];
+//                if (nx < 0 || nx >= N || ny < 0 || ny >= M) continue;
+//                if (visited[nx][ny] || maze[nx][ny] == 1) continue;
+//                if (nx == endX && ny == endY) return dist + 1;
+//                visited[nx][ny] = true;
+//                q.offer(new int[]{nx, ny, dist + 1});
+//            }
+//        }
+//
+//    }
 
 }
