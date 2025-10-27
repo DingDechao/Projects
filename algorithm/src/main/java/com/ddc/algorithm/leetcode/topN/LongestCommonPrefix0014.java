@@ -1,9 +1,7 @@
-package com.ddc.algorithm.topN;
-
-import java.util.Locale;
+package com.ddc.algorithm.leetcode.topN;
 
 // 14. https://leetcode.com/problems/longest-common-prefix/
-public class LongestCommonPrefix {
+public class LongestCommonPrefix0014 {
 
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) {
@@ -35,10 +33,10 @@ public class LongestCommonPrefix {
     }
 
     public static void main(String[] args) {
-        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+        LongestCommonPrefix0014 longestCommonPrefix0014 = new LongestCommonPrefix0014();
 //        String[] strs = {"f", "c", "flight"};
         String[] strs = {"flower", "flow", "flight"};
-        String result = longestCommonPrefix.longestCommonPrefix(strs);
+        String result = longestCommonPrefix0014.longestCommonPrefix(strs);
         System.out.println("Longest Common Prefix: " + result);
     }
 }

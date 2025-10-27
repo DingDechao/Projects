@@ -1,7 +1,7 @@
-package com.ddc.algorithm.topN;
+package com.ddc.algorithm.leetcode.topN;
 
 //9. https://leetcode.com/problems/palindrome-number/description/
-public class PalindromeNumber {
+public class PalindromeNumber0009 {
     public boolean isPalindrome(int x) {
         if (x < 0) {
             return false;

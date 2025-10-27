@@ -1,11 +1,11 @@
-package com.ddc.algorithm.topN;
+package com.ddc.algorithm.leetcode.topN;
 
 
 import java.util.HashMap;
 import java.util.Map;
 
 //13. https://leetcode.com/problems/roman-to-integer/description/
-public class RomanToInteger {
+public class RomanToInteger0013 {
 
     public int romanToInt(String s) {
         Map<Character, Integer> map = new HashMap<>();
@@ -30,7 +30,7 @@ public class RomanToInteger {
     }
 
     public static void main(String[] args) {
-        RomanToInteger romanToInteger = new RomanToInteger();
+        RomanToInteger0013 romanToInteger = new RomanToInteger0013();
         String s = "MCMXCIV";
         int result = romanToInteger.romanToInt(s);
         System.out.println("Roman numeral: " + s + " => Integer: " + result);

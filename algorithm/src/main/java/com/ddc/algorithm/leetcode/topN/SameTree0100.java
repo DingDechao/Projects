@@ -1,7 +1,7 @@
-package com.ddc.algorithm.topN;
+package com.ddc.algorithm.leetcode.topN;
 
 // 100. https://leetcode.com/problems/same-tree/
-public class SameTree {
+public class SameTree0100 {
 
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) return true;

@@ -1,11 +1,11 @@
-package com.ddc.algorithm.topN;
+package com.ddc.algorithm.leetcode.topN;
 
 
 import java.util.HashMap;
 import java.util.Map;
 
 //1. https://leetcode.com/problems/two-sum/
-public class TwoSum {
+public class TwoSum0001 {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap();
         for (int i = 0; i < nums.length; i++) {

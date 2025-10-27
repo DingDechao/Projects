@@ -1,7 +1,7 @@
-package com.ddc.algorithm.topN;
+package com.ddc.algorithm.leetcode.topN;
 
 // 21. https://leetcode.com/problems/merge-two-sorted-lists/description/
-public class MergeTwoSortedLists {
+public class MergeTwoSortedLists0021 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode(0);
         ListNode current = dummy;
@@ -29,7 +29,7 @@ public class MergeTwoSortedLists {
     }
 
     public static void main(String[] args) {
-        MergeTwoSortedLists merger = new MergeTwoSortedLists();
+        MergeTwoSortedLists0021 merger = new MergeTwoSortedLists0021();
         ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
         ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
         ListNode mergedList = merger.mergeTwoLists(list1, list2);
