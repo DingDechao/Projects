@@ -1,7 +1,7 @@
 package com.ddc.algorithm.leetcode.topN;
 
-// 2.https://leetcode.com/problems/add-two-numbers/
-public class AddTwoNumbers0002 {
+// 2. https://leetcode.com/problems/add-two-numbers/
+public class Leetcode0002_AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode node = new ListNode(0);
         ListNode head = node;
@@ -43,7 +43,7 @@ public class AddTwoNumbers0002 {
     }
 
     public static void main(String[] args) {
-        AddTwoNumbers0002 addTwoNumbers = new AddTwoNumbers0002();
+        Leetcode0002_AddTwoNumbers addTwoNumbers = new Leetcode0002_AddTwoNumbers();
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         ListNode result = addTwoNumbers.addTwoNumbers(l1, l2);

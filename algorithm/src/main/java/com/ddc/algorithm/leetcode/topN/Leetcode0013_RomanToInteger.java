@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 //13. https://leetcode.com/problems/roman-to-integer/description/
-public class RomanToInteger0013 {
+public class Leetcode0013_RomanToInteger {
 
     public int romanToInt(String s) {
         Map<Character, Integer> map = new HashMap<>();
@@ -30,7 +30,7 @@ public class RomanToInteger0013 {
     }
 
     public static void main(String[] args) {
-        RomanToInteger0013 romanToInteger = new RomanToInteger0013();
+        Leetcode0013_RomanToInteger romanToInteger = new Leetcode0013_RomanToInteger();
         String s = "MCMXCIV";
         int result = romanToInteger.romanToInt(s);
         System.out.println("Roman numeral: " + s + " => Integer: " + result);

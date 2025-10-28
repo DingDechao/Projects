@@ -3,8 +3,8 @@ package com.ddc.algorithm.leetcode.topN;
 import java.util.ArrayList;
 import java.util.List;
 
-// 94 : https://leetcode.com/problems/binary-tree-inorder-traversal/description/
-public class BinaryTreeInorderTraversal0094 {
+// 94. https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+public class Leetcode0094_BinaryTreeInorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         if (root == null) {

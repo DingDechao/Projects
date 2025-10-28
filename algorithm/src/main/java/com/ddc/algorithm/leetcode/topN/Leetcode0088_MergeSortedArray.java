@@ -1,7 +1,7 @@
 package com.ddc.algorithm.leetcode.topN;
 
-// 88: https://leetcode.com/problems/merge-sorted-array/description/
-public class MergeSortedArray0088 {
+// 88. https://leetcode.com/problems/merge-sorted-array/description/
+public class Leetcode0088_MergeSortedArray {
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int left = m - 1;
@@ -42,8 +42,8 @@ public class MergeSortedArray0088 {
     }
 
     public static void main(String[] args) {
-        MergeSortedArray0088 mergeSortedArray0088 = new MergeSortedArray0088();
-        mergeSortedArray0088.merge(new int[]{1, 2, 3, 0, 0, 0}, 3, new int[]{2, 5, 6}, 3);
+        Leetcode0088_MergeSortedArray leetcode0088MergeSortedArray = new Leetcode0088_MergeSortedArray();
+        leetcode0088MergeSortedArray.merge(new int[]{1, 2, 3, 0, 0, 0}, 3, new int[]{2, 5, 6}, 3);
 //        mergeSortedArray0088.merge(new int[]{0}, 0, new int[]{1}, 1);
     }
 }

@@ -3,8 +3,8 @@ package com.ddc.algorithm.leetcode.topN;
 
 import java.util.Arrays;
 
-// 27 https://leetcode.com/problems/remove-element/description/
-public class RemoveElement0027 {
+// 27. https://leetcode.com/problems/remove-element/description/
+public class Leetcode0027_RemoveElement {
 
     public int removeElement(int[] nums, int val) {
         int sum = 0;
@@ -26,8 +26,8 @@ public class RemoveElement0027 {
     }
 
     public static void main(String[] args) {
-        RemoveElement0027 removeElement0027 = new RemoveElement0027();
-        System.out.println(removeElement0027.removeElement(new int[]{0, 1, 2, 2, 3, 0, 4, 2}, 2));
+        Leetcode0027_RemoveElement leetcode0027RemoveElement = new Leetcode0027_RemoveElement();
+        System.out.println(leetcode0027RemoveElement.removeElement(new int[]{0, 1, 2, 2, 3, 0, 4, 2}, 2));
 //        System.out.println(removeElement.removeElement(new int[]{3, 2, 2, 3}, 3));
     }
 }
