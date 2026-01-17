@@ -1,58 +1,87 @@
-| 分类       | 名称                                                                                             | 网址                                                                                          |
-|------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| 书签栏     | MiaoSS                                                                                           | https://www.miaosscib.com/login.php                                                           |
-| 书签栏     | Google                                                                                           | https://www.google.com                                                                        |
-| 书签栏     | 谷歌地图                                                                                         | https://maps.google.com                                                                       |
-| 书签栏     | Gmail                                                                                            | https://accounts.google.com/b/0/AddMailService                                                |
-| 书签栏     | YouTube                                                                                          | https://youtube.com                                                                           |
-| 书签栏     | 百度                                                                                             | https://www.baidu.com                                                                         |
-| 书签栏     | DeepSeek                                                                                         | https://chat.deepseek.com/sign_in                                                             |
-| 书签栏     | 高德地图                                                                                         | https://www.amap.com/                                                                         |
-| 书签栏     | 163网易邮箱                                                                                      | https://mail.163.com/                                                                         |
-| 书签栏     | 微博                                                                                             | https://weibo.com/simpleddc/home?topnav=1&wvr=6                                               |
-| 书签栏     | 汽车之家                                                                                         | https://www.autohome.com.cn/shanghai/                                                         |
-| 书签栏     | 懂车帝                                                                                           | https://www.dongchedi.com/                                                                    |
-| 书签栏     | 马蜂窝                                                                                           | https://www.mafengwo.cn/                                                                      |
-| 书签栏     | 慢慢买                                                                                           | https://www.manmanbuy.com                                                                     |
-| 书签栏     | 淘宝                                                                                             | https://www.taobao.com                                                                        |
-| 书签栏     | 京东                                                                                             | https://www.jd.com/                                                                           |
-| 书签栏     | 哔哩哔哩                                                                                         | https://www.bilibili.com                                                                      |
-| 书签栏     | TED                                                                                              | https://www.ted.com/                                                                          |
-| Mac        | homebrew \| 镜像站使用帮助 \| 清华大学开源软件镜像站 \| Tsinghua Open Source Mirror             | https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/                                           |
-| Mac        | Homebrew介绍和使用 - 简书                                                                        | https://www.jianshu.com/p/de6f1d2d37bf                                                        |
-| Mac        | MacWk - 精品mac软件下载                                                                          | https://macwk.cn                                                                              |
-| Mac        | macOS（或 Linux）缺失的软件包的管理器 — Homebrew                                                | https://brew.sh/index_zh-cn                                                                   |
-| Document   | Spring Boot Reference Guide                                                                      | https://docs.spring.io/spring-boot/docs/2.1.7.RELEASE/reference/html/                         |
-| Document   | Spring Initializr                                                                                | https://start.spring.io/                                                                      |
-| Document   | Documentation for Visual Studio Code                                                             | https://code.visualstudio.com/docs?start=true                                                 |
-| Document   | MySQL :: MySQL 5.7 Reference Manual                                                              | https://dev.mysql.com/doc/refman/5.7/en/                                                      |
-| Document   | H2 Database Engine                                                                               | https://www.h2database.com/html/main.html                                                     |
-| Document   | Node.js — Run JavaScript Everywhere                                                              | https://nodejs.org/en/                                                                        |
-| Document   | Apache Airflow                                                                                   | https://airflow.apache.org/                                                                   |
-| Document   | drawio-desktop - 26.0.15                                                                         | https://github.com/jgraph/drawio-desktop/releases/tag/v26.0.15                              |
-| Document   | 更改pip源 / 解决 ReadTimeoutError                                                                | https://www.cnblogs.com/longchang/p/11274461.html                                             |
-| Document   | 超详细kindle已购买的电子书下载转换导出教程 - 知乎                                                | https://zhuanlan.zhihu.com/p/534453957                                                        |
-| Document   | 如何将从 Kindle 中国电子书商店购买的电子书备份到本地 – 书伴                                      | https://bookfere.com/post/983.html                                                            |
-| Study      | 京东读书                                                                                         | https://e-m.jd.com                                                                            |
-| Study      | Chapter 1. JUnit jump-start · JUnit in Action, Second Edition                                    | https://livebook.manning.com/book/junit-in-action-second-edition/chapter-1/ch01               |
-| Study      | Spring Boot in Action                                                                            | https://www.manning.com/books/spring-boot-in-action                                           |
-| Study      | 慕课网-程序员的梦工厂                                                                              | https://www.imooc.com/?utm_term=%E6%85%95%E8%AF%BE&utm_campaign=SEM&utm_source=bdppxg        |
-| Study      | 码士集团官网 - IT职业领路人                                                                        | https://www.mashibing.com                                                                     |
-| Requirement|                                                                                                  |                                                                                               |
-| Design     | ProcessOn思维导图流程图-在线画思维导图流程图_在线作图实时协作                                      | https://www.processon.com                                                                     |
-| Development| Maven Repository                                                                                 | https://mvnrepository.com/                                                                    |
-| Development| Git                                                                                              | https://git-scm.com                                                                           |
-| Development| JSON Formatter & Validator                                                                       | https://jsonformatter.curiousconcept.com                                                      |
-| Development| JSON Editor Online: edit JSON, format JSON, query JSON                                           | https://jsoneditoronline.org/                                                                 |
-| Development| JSON Online Validator and Formatter - JSON Lint                                                  | https://jsonlint.com/                                                                         |
-| Development| JSON Schema Validator - Newtonsoft                                                               | https://www.jsonschemavalidator.net/                                                          |
-| Development| GitHub                                                                                           | https://github.com                                                                            |
-| Development| Github - DingDechao/Projects                                                                     | https://github.com/DingDechao/Projects                                                        |
-| Development| Github - DeDRM_tools                                                                             | https://github.com/apprenticeharper/DeDRM_tools/tree/master/DeDRM_plugin                      |
-| Development| Bitbucket - TDD                                                                                  | https://bitbucket.org/vfarcic/workspace/repositories/                                         |
-| Development| 力扣 (LeetCode) 全球极客挚爱的技术成长平台                                                        | https://leetcode.cn/?utm_source=LCUS&utm_medium=ip_redirect&utm_campaign=transfer2china       |
-| Testing    | Data Structure Visualization                                                                     | https://www.cs.usfca.edu/~galles/visualization/Algorithms.html                                |
-| English    | Oxford Phonics World \| 学习资源 \| Oxford University Press                                      | https://elt.oup.com/student/oxfordphonicsworld/?cc=cn&selLanguage=zh                          |
-| English    | 零基础学音标 大人小孩一起学英语                                                                  | https://www.bilibili.com/video/av5123229                                                      |
-| Visa       | Nonimmigrant Visa - Instructions Page                                                            | https://ceac.state.gov/GenNIV/Default.aspx                                                    |
-| Visa       | 申请美国签证 \| 申请签证 - 在中国                                                                 | https://www.ustraveldocs.com                                                                  |
+| 分类          | 名称                                                                | 网址                                                                                          |
+|-------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| 书签栏         | MiaoSS                                                            | https://www.miaosscib.com/login.php                                                           |
+| 书签栏         | Google                                                            | https://www.google.com                                                                        |
+| 书签栏         | 谷歌地图                                                              | https://maps.google.com                                                                       |
+| 书签栏         | Gmail                                                             | https://accounts.google.com/b/0/AddMailService                                                |
+| 书签栏         | YouTube                                                           | https://youtube.com                                                                           |
+| 书签栏         | 百度                                                                | https://www.baidu.com                                                                         |
+| 书签栏         | DeepSeek                                                          | https://chat.deepseek.com/sign_in                                                             |
+| 书签栏         | 高德地图                                                              | https://www.amap.com/                                                                         |
+| 书签栏         | 163网易邮箱                                                           | https://mail.163.com/                                                                         |
+| 书签栏         | 邮件 - 丁德超 - Outlook                                                | https://outlook.live.com/mail/0/                                                                        |
+| 书签栏         | 微博                                                                | https://weibo.com/simpleddc/home?topnav=1&wvr=6                                               |
+| 书签栏         | 汽车之家                                                              | https://www.autohome.com.cn/shanghai/                                                         |
+| 书签栏         | 懂车帝                                                               | https://www.dongchedi.com/                                                                    |
+| 书签栏         | 马蜂窝                                                               | https://www.mafengwo.cn/                                                                      |
+| 书签栏         | 慢慢买                                                               | https://www.manmanbuy.com                                                                     |
+| 书签栏         | 淘宝                                                                | https://www.taobao.com                                                                        |
+| 书签栏         | 京东                                                                | https://www.jd.com/                                                                           |
+| 书签栏         | 哔哩哔哩                                                              | https://www.bilibili.com                                                                      |
+| 书签栏         | TED                                                               | https://www.ted.com/                                                                          |
+| Mac         | homebrew \| 镜像站使用帮助 \| 清华大学开源软件镜像站 \| Tsinghua Open Source Mirror | https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/                                           |
+| Mac         | Homebrew介绍和使用 - 简书                                                | https://www.jianshu.com/p/de6f1d2d37bf                                                        |
+| Mac         | MacWk - 精品mac软件下载                                                 | https://macwk.cn                                                                              |
+| Mac         | Homebrew — Homebrew                                               | https://brew.sh/blog/                                                              |
+| Document    | Spring Boot Reference Guide                                       | https://docs.spring.io/spring-boot/docs/2.1.7.RELEASE/reference/html/                         |
+| Document    | Spring Initializr                                                 | https://start.spring.io/                                                                      |
+| Document    | Documentation for Visual Studio Code                              | https://code.visualstudio.com/docs?start=true                                                 |
+| Document    | MySQL :: MySQL 5.7 Reference Manual                               | https://dev.mysql.com/doc/refman/5.7/en/                                                      |
+| Document    | H2 Database Engine                                                | https://www.h2database.com/html/main.html                                                     |
+| Document    | Node.js — Run JavaScript Everywhere                               | https://nodejs.org/en/                                                                        |
+| Document    | Apache Airflow                                                    | https://airflow.apache.org/                                                                   |
+| Document    | drawio-desktop - 26.0.15                                          | https://github.com/jgraph/drawio-desktop/releases/tag/v26.0.15                              |
+| Document    | 更改pip源 / 解决 ReadTimeoutError                                      | https://www.cnblogs.com/longchang/p/11274461.html                                             |
+| Document    | 超详细kindle已购买的电子书下载转换导出教程 - 知乎                                     | https://zhuanlan.zhihu.com/p/534453957                                                        |
+| Document    | 如何将从 Kindle 中国电子书商店购买的电子书备份到本地 – 书伴                               | https://bookfere.com/post/983.html                                                            |
+| Study       | 京东读书                                                              | https://e-m.jd.com                                                                            |
+| Study       | Chapter 1. JUnit jump-start · JUnit in Action, Second Edition     | https://livebook.manning.com/book/junit-in-action-second-edition/chapter-1/ch01               |
+| Study       | Spring Boot in Action                                             | https://www.manning.com/books/spring-boot-in-action                                           |
+| Study       | 慕课网-程序员的梦工厂                                                       | https://www.imooc.com/?utm_term=%E6%85%95%E8%AF%BE&utm_campaign=SEM&utm_source=bdppxg        |
+| Study       | 码士集团官网 - IT职业领路人                                                  | https://www.mashibing.com                                                                     |
+| Requirement |                                                                   |                                                                                               |
+| Design      | ProcessOn思维导图流程图-在线画思维导图流程图_在线作图实时协作                              | https://www.processon.com                                                                     |
+| Development | Maven Repository                                                  | https://mvnrepository.com/                                                                    |
+| Development | Git                                                               | https://git-scm.com                                                                           |
+| Development | JSON Formatter & Validator                                        | https://jsonformatter.curiousconcept.com                                                      |
+| Development | JSON Editor Online: edit JSON, format JSON, query JSON            | https://jsoneditoronline.org/                                                                 |
+| Development | JSON Online Validator and Formatter - JSON Lint                   | https://jsonlint.com/                                                                         |
+| Development | JSON Schema Validator - Newtonsoft                                | https://www.jsonschemavalidator.net/                                                          |
+| Development | GitHub                                                            | https://github.com                                                                            |
+| Development | Github - DingDechao/Projects                                      | https://github.com/DingDechao/Projects                                                        |
+| Development | algorithmzuo (左程云)                                                | https://github.com/algorithmzuo                      |
+| Development | Github - DeDRM_tools                                              | https://github.com/apprenticeharper/DeDRM_tools/tree/master/DeDRM_plugin                      |
+| Development | Bitbucket - TDD                                                   | https://bitbucket.org/vfarcic/workspace/repositories/                                         |
+| Development | 力扣 (LeetCode) 全球极客挚爱的技术成长平台                                       | https://leetcode.cn/?utm_source=LCUS&utm_medium=ip_redirect&utm_campaign=transfer2china       |
+| Development | Dashboard - HackerRank                                            | https://www.hackerrank.com/dashboard      |
+| Development | Spring Initializr                                                 | https://start.spring.io       |
+| Testing     | Data Structure Visualization                                      | https://www.cs.usfca.edu/~galles/visualization/Algorithms.html                                |
+| English     | Oxford Phonics World \| 学习资源 \| Oxford University Press           | https://elt.oup.com/student/oxfordphonicsworld/?cc=cn&selLanguage=zh                          |
+| English     | 零基础学音标 大人小孩一起学英语                                                  | https://www.bilibili.com/video/av5123229                                                      |
+| Visa        | Nonimmigrant Visa - Instructions Page                             | https://ceac.state.gov/GenNIV/Default.aspx                                                    |
+| Visa        | 申请美国签证 \| 申请签证 - 在中国                                              | https://www.ustraveldocs.com                                                                  |
+| Visa        | 史上最全美国签证DS-160在线表格填写指南(一） - 知乎                                    | https://zhuanlan.zhihu.com/p/555935934                                                            |
+| -           | 【旗舰标杆】拯救者刃9000K 2025 U9 RTX5080 游戏台式机_多少钱_参数_图片_价格_用户评价_联想商城                                  | https://item.lenovo.com.cn/product/1043410.html?key=刃9000k&keyType=下拉推荐词&pageType=https%3A%2F%2Fshop.lenovo.com.cn%2F&frompage=home                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
+| -        | -                                    | -                                                            |
