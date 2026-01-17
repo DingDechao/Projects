@@ -1,7 +1,6 @@
 | 分类       | 名称                                                                                             | 网址                                                                                          |
 |------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 书签栏     | MiaoSS                                                                                           | https://www.miaosscib.com/login.php                                                           |
-| 书签栏     | MiaoSS                                                                                           | https://www.miaosscib.com/login.php                                                           |
 | 书签栏     | Google                                                                                           | https://www.google.com                                                                        |
 | 书签栏     | 谷歌地图                                                                                         | https://maps.google.com                                                                       |
 | 书签栏     | Gmail                                                                                            | https://accounts.google.com/b/0/AddMailService                                                |
