@@ -56,6 +56,8 @@
 - YouTube
 - zoom.us
 - 腾讯会议
+- PostgreSQL 18 from https://postgresapp.com/downloads.html
+- pgadmin from https://www.postgresql.org/ftp/pgadmin/pgadmin4/v9.11/macos/
 
 ---
 # Development environment setup on Mac
