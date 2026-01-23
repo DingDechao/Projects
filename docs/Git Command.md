@@ -111,12 +111,19 @@ git branch -D branchname (强制删除分区)
 git checkout -b newbranch
 git checkout -b newbranch commitid --> 以commitid为起点创建newbranch并切换到这个新分支上
 git checkout —force branchname （强制切换分区，当前分支的改动会丢失）
-
 ```
 
 ##### 改变当前的分支
 ```
 git checkout branchname
+```
+
+##### 创建一个带有项目原始信息和整个项目历史的克隆版本
+```
+git clone 源目录 目标目录
+
+创建一个不带工作区的共享版本库
+git clone --bare  源目录 目标目录
 ```
 
 ##### 把当前工作区和暂存区的内容存到stash stack中
@@ -176,13 +183,6 @@ git config --global user.name "ddc"
 git config --global alias.xx commit -->给 commit设置别名
 ```
 
-##### 创建一个带有项目原始信息和整个项目历史的克隆版本
-```
-git clone 源目录 目标目录
-
-创建一个不带工作区的共享版本库
-git clone --bare  源目录 目标目录
-```
 
 ##### 取回A的提交 B是从A clone得到的 所以B有A的路径，执行git pull B知道是从A那里获得最新的提交
 ```
