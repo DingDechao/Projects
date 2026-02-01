@@ -43,6 +43,8 @@ explorer shell:AppsFolder //在Windows上打开应用列表
 - zoom.us
 - 腾讯会议
 - duplicatecleaner - Only for Windows:https://www.duplicatecleaner.com/
+- VMware Workstation Pro 25H2 from https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
+- CentOS 7 from https://vault.centos.org/7.9.2009/isos/x86_64/CentOS-7-x86_64-DVD-2009.iso
 
 
 
