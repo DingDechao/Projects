@@ -1,4 +1,0 @@
-#
-
-## 
-https://openapi-generator.tech/

@@ -24,6 +24,101 @@ who
 lscpu
 ```
 
+##### 查看当前所在的目录
+```
+pwd
+```
+
+##### 切换目录 - change directory
+```
+cd / #切换到根目录
+cd . #切换到当前目录
+cd .. #退到上一级
+cd /XXX/XXX/XXX/XXX #切换到绝对路径
+cd ./XXX #切换到相对路径
+cd ~ #切换到当前用户目录
+```
+
+##### 列出目录 - list
+```
+ls  #列出当前目录
+ls /XXX/XXX/XXX/XXX #列出到绝对路径的文件
+ls ./XXX #列出相对路径下的文件
+ls -a  #a代表all，表示全部，包括隐藏文件
+ls -l  #列出详细信息
+```
+
+
+##### 清空当前终端的内容
+```
+clear
+```
+
+##### 创建一个空文件
+```
+touch aa
+```
+
+##### 查看文件的全部内容
+```
+cat /XXX/XXX
+```
+
+
+##### 多屏查看文件
+```
+more /XXX/XXX
+# 回车显示下一行
+# 可控显示下一页
+# q退出分屏显示
+# ctrl + c 退出命令
+```
+
+##### 查看文件的前多少行
+```
+head /XXX/XXX ## 默认显示10行
+head -number filename # 显示前number行
+```
+
+##### 查看文件的后多少航
+```
+tail /XXX/XXX ## 默认显示10行
+tail -number filename # 显示后number行
+```
+
+
+##### 创建文件夹
+```
+mkdir XXX
+mkdir -p xxx/xxxx 
+```
+
+##### 复制文件 & 文件夹
+```
+cp  原文件 目标文件
+cp -r 原文件夹 新地址
+```
+
+
+##### 删除文件 & 文件夹
+```
+rm -f 文件 #-f 表示不需要交互
+rm -rf 文件夹
+```
+
+##### 移动文件/文件夹 & 重命名文件&文件夹
+```
+mv xxx /
+mv xxx www
+```
+
+##### 查看网络
+```
+ipconfig
+```
+
+
+
 ##### 查看网络的联机状态
 ```
 netstat -a
@@ -88,7 +183,11 @@ chmod 777 .bashrc
 
 ##### 压缩
 ```
-tar -jcv -f filename.tar.bz2 被压缩的文件或目录
+tar -jcv -f filename.tar.gz 被压缩的文件或目录
+# tar.gz是一种压缩格式
+# -c 创建压缩操作
+# -v 显示过程
+# -f 指定文件名
 ```
 
 ##### 查询
@@ -99,6 +198,11 @@ tar -jtv -f filename.tar.bz2
 ##### 解压缩
 ```
 tar -jxv -f filename.tar.bz2 -C 要解压缩的文件或目录
+# tar.gz是一种压缩格式
+# -x 解压缩操作
+# -v 显示过程
+# -f 指定文件名
+# -C 指定解压缩到哪去
 ```
 
 ##### 查看CPU信息
