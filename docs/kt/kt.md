@@ -3,7 +3,7 @@
 | 1  | Business | Business walkthrough |  |
 | 2  |  | Q & A |  |
 | 3  | Project | Project related: |  |
-| 4  |  | Dev Progress, requirement confirmm, task assigned, QA processing, UAT processing, weekly meeting, daily meeting |  |
+| 4  |  | Dev Progress, requirement confirm, task assigned, QA processing, UAT processing, weekly meeting, daily meeting |  |
 | 6  |  | Involved role, BA, Graphic desgin, dev consulter, the role who do as PM |  |
 | 7  |  | JIRA use rule |  |
 | 8  | UI | UI Framework & Project related: |  |
