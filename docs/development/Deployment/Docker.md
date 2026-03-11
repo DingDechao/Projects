@@ -153,6 +153,12 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/ 
 ```
 
+##### 查看容器ip地址
+```
+docker inspect 容器ID
+```
+
+
 ##### 获取镜像
 ```
 docker pull
@@ -209,6 +215,9 @@ docker rm container-id
 ##### 运行容器
 ```
 docker run image-id
+//-d 在后台运行
+docker run -d hello-world
+docker run -d nginx:latest
 ```
 
 ##### 进入容器
