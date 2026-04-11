@@ -3,6 +3,7 @@
 | Operating system                  | macOS Sequoia 15.7.3 | Windows 11 家庭中文版                     | Windows 11 家庭中文版                     |
 | VMware Workstation Pro 25H2       |                      |                                      | 25.0.0.24995812                      |
 | CentOS                            |                      | CentOS Linux release 7.9.2009 (Core) | CentOS Linux release 7.9.2009 (Core) |
+| ubuntu                            |                      | 24.04.4-desktop-amd64                |                                      |
 | MobaXterm                         |                      | v26.2                                |                                      |
 | xmind                             | 25.07.03033          | 26.01.07153                          | 25.07.03033                          |
 | draw.io                           | v28.0.6              | v27.0.9                              | v27.0.9                              |
