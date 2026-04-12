@@ -704,3 +704,61 @@ sudo systemctl restart kubelet
 ```
 kubectl delete pods -n kube-system -l k8s-app=kube-dns
 ```
+
+
+```
+sudo apt update
+sudo apt install -y openssh-server
+eading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+ncurses-term openssh-sftp-server ssh-import-id
+Suggested packages:
+molly-guard monkeysphere ssh-askpass
+The following NEW packages will be installed:
+ncurses-term openssh-server openssh-sftp-server ssh-import-id
+0 upgraded, 4 newly installed, 0 to remove and 82 not upgraded.
+Need to get 832 kB of archives.
+After this operation, 6,743 kB of additional disk space will be used.
+Get:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 openssh-sftp-server amd64 1:9.6p1-3ubuntu13.15 [37.3 kB]
+Get:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 openssh-server amd64 1:9.6p1-3ubuntu13.15 [510 kB]
+Get:3 http://cn.archive.ubuntu.com/ubuntu noble/main amd64 ncurses-term all 6.4+20240113-1ubuntu2 [275 kB]
+Get:4 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 ssh-import-id all 5.11-0ubuntu2.24.04.1 [10.1 kB]
+Fetched 832 kB in 1s (1,196 kB/s)     
+Preconfiguring packages ...
+Selecting previously unselected package openssh-sftp-server.
+(Reading database ... 173423 files and directories currently installed.)
+Preparing to unpack .../openssh-sftp-server_1%3a9.6p1-3ubuntu13.15_amd64.deb ...
+Unpacking openssh-sftp-server (1:9.6p1-3ubuntu13.15) ...
+Selecting previously unselected package openssh-server.
+Preparing to unpack .../openssh-server_1%3a9.6p1-3ubuntu13.15_amd64.deb ...
+Unpacking openssh-server (1:9.6p1-3ubuntu13.15) ...
+Selecting previously unselected package ncurses-term.
+Preparing to unpack .../ncurses-term_6.4+20240113-1ubuntu2_all.deb ...
+Unpacking ncurses-term (6.4+20240113-1ubuntu2) ...
+Selecting previously unselected package ssh-import-id.
+Preparing to unpack .../ssh-import-id_5.11-0ubuntu2.24.04.1_all.deb ...
+Unpacking ssh-import-id (5.11-0ubuntu2.24.04.1) ...
+Setting up openssh-sftp-server (1:9.6p1-3ubuntu13.15) ...
+Setting up openssh-server (1:9.6p1-3ubuntu13.15) ...
+
+Creating config file /etc/ssh/sshd_config with new version
+Created symlink /etc/systemd/system/sockets.target.wants/ssh.socket → /usr/lib/systemd/system/ssh.socket.
+Created symlink /etc/systemd/system/ssh.service.requires/ssh.socket → /usr/lib/systemd/system/ssh.socket.
+Setting up ssh-import-id (5.11-0ubuntu2.24.04.1) ...
+Setting up ncurses-term (6.4+20240113-1ubuntu2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ufw (0.36.2-6) ...
+```
+
+```
+sudo systemctl start ssh
+sudo systemctl enable ssh
+Synchronizing state of ssh.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable ssh
+Created symlink /etc/systemd/system/sshd.service → /usr/lib/systemd/system/ssh.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/ssh.service → /usr/lib/systemd/system/ssh.service.
+
+sudo systemctl status ssh
+```
